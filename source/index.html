@@ -4,9 +4,141 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
   </head>
+
   <body>
+    <header class="main-header">
+      <div class="main-menu__wrapper">
+        <ul class="main-menu">
+          <img class="main-menu__logo pink-logo" src="#" width="75" height="22" alt="Логотип Pink">
+          <button class="main-menu__toggle" type="button">Открыть меню</button>
+        </ul>
+      </div>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Профессиональный HTML и CSS</a>», уровень 2.</p>
+      <nav class="main-nav visually-hidden">
+        <img class="main-nav__logo pink-logo" src="#" width="75" height="22" alt="Логотип Pink">
+        <button class="main-nav__toggle" type="button">Закрыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a>Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="photo.html">Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a href="https://htmlacademy.ru/">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
+    <main class="main-container">
+      <h1 class="visually-hidden">О приложении Pink</h1>
+      <div class="main__img-place"></div>
+
+      <section class="app-download">
+        <h2 class="visually-hidden">Скачать приложение</h2>
+        <button class="button app-download__button" type="button">Скачать приложение</button>
+        <ul class="app-download__images">
+          <li><img class="app-download__img apple-logo" src="#" width="47" height="56" alt="Логотип Apple"></li>
+          <li><img class="app-download__img android-logo" src="#" width="43" height="47" alt="Логотип Android"></li>
+          <li><img class="app-download__img microsoft-logo" src="#" width="44" height="41" alt="Логотип Microsoft"></li>
+        </ul>
+        <p class="app-download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </section>
+
+      <section class="app-description">
+        <h2 class="visually-hidden">Что вы получите, используя приложение Pink</h2>
+        <h2 class="app-description__header-main">Устали от серости мегаполиса?</h2>
+        <h2 class="app-description__header-main">Нам есть, что вам предложить!</h2>
+
+        <ul class="app-description__list">
+          <li class="app-description__list-item">
+            <h3 class="app-description__header">Поднимает настроение</h3>
+            <p class="app-description__text">Приложение поможет вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </li>
+          <li class="app-description__list-item">
+            <h3 class="app-description__header">Меняет мир вокруг</h3>
+            <p class="app-description__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </li>
+          <li class="app-description__list-item">
+            <h3 class="app-description__header">Заводит новых друзей</h3>
+            <p class="app-description__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </li>
+        </ul>
+        <img class="app-description_image" src="#" width="157" height="320" alt="Всем привет! :-)">
+
+        <div class="app-description__review">
+          <span class="app-description__review-name">Николай Петров</span>
+          <p class="app-description__review-text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серый вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
+          <form class="app-description__pins" action="#" method="post">
+            <input class="hidden" id="one" type="radio" name="sliders" value="first" checked>
+            <label class="slider-radio first-slider" for="one"></label>
+            <input class="hidden" id="two" type="radio" name="sliders" value="second">
+            <label class="slider-radio second-slider" for="two"></label>
+            <input class="hidden" id="three" type="radio" name="sliders" value="third">
+            <label class="slider-radio third-slider" for="three"></label>
+          </form>
+        </div>
+      </section>
+
+      <section class="app-prices">
+        <div class="app-prices__header">
+          <span class="app-prices__hit">хит</span>
+          <span class="app-prices__text">стандарт</span>
+          <span class="app-prices__price">3,99 USD</span>
+        </div>
+
+        <ul class="app-prices__list">
+          <li class="app-prices__list-item">
+            <p class="app-prices__list-text">розовый фильтр</p>
+            <img class="app-prices__list-img app-prices__list-img--yes" src="#" width="31" height="21" alt="Выбрано">
+          </li>
+          <li class="app-prices__list-item">
+            <p class="app-prices__list-text">смайлики</p>
+            <img class="app-prices__list-img app-prices__list-img--yes" src="#" width="31" height="21" alt="Выбрано">
+          </li>
+          <li class="app-prices__list-item">
+            <p class="app-prices__list-text">комментарии</p>
+            <img class="app-prices__list-img app-prices__list-img--no" src="#" width="27" height="26" alt="Не выбрано">
+          </li>
+        </ul>
+
+        <form class="app-prices__pins" action="#" method="post">
+            <input class="hidden" id="first" type="radio" name="sliders" value="first">
+            <label class="slider-radio first-slider" for="first"></label>
+            <input class="hidden" id="second" type="radio" name="sliders" value="second" checked>
+            <label class="slider-radio second-slider" for="second"></label>
+            <input class="hidden" id="third" type="radio" name="sliders" value="third">
+            <label class="slider-radio third-slider" for="third"></label>
+          </form>
+      </section>
+    </main>
   </body>
+
+  <footer class="main-footer">
+    <section class="contacts">
+      <h2 class="contacts__header">Остались вопросы? Свяжитесь с нами!</h2>
+      <ul class="contacts__list">
+        <li class="contacts__list-item">
+          <p class="contacts__key">Звоните:</p>
+          <p class="contacts__value">+7(812) 555-66-66</p>
+        </li>
+        <li class="contacts__list-item">
+          <p class="contacts__key">Пишите:</p>
+          <p class="contacts__value">mail@htmlacademy.ru</p>
+        </li>
+        <li class="contacts__list-item">
+          <p class="contacts__key">Приезжайте в гости:</p>
+          <p class="contacts__value">ул. Большая Конюшенная, 19/8</p>
+        </li>
+      </ul>
+      <div class="contacts__map">
+      </div>
+    </section>
+  </footer>
 </html>
