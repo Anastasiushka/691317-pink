@@ -7,29 +7,27 @@
 
   <body>
     <header class="main-header">
-      <div class="main-menu__wrapper">
-        <ul class="main-menu">
-          <img class="main-menu__logo pink-logo" src="#" width="75" height="22" alt="Логотип Pink">
-          <button class="main-menu__toggle" type="button">Открыть меню</button>
-        </ul>
+      <div class="main-menu">
+        <img class="main-menu__logo logo" src="http://placehold.it/150x100" width="75" height="22" alt="Логотип Pink">
+        <button class="main-menu__toggle" type="button">Открыть меню</button>
       </div>
 
       <nav class="main-nav visually-hidden">
-        <img class="main-nav__logo pink-logo" src="#" width="75" height="22" alt="Логотип Pink">
+        <img class="main-nav__logo logo" src="http://placehold.it/150x100" width="75" height="22" alt="Логотип Pink">
         <button class="main-nav__toggle" type="button">Закрыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a>Главная</a>
+              <a class="main__main">Главная</a>
             </li>
             <li class="site-list__item">
-              <a href="photo.html">Фотографии</a>
+              <a class="main__photo" href="photo.html">Фотографии</a>
             </li>
             <li class="site-list__item">
-              <a href="form.html">Конкурс</a>
+              <a class="main__form" href="form.html">Конкурс</a>
             </li>
             <li class="site-list__item">
-              <a href="https://htmlacademy.ru/">HTML Academy</a>
+              <a class="main__academy" href="https://htmlacademy.ru/">HTML Academy</a>
             </li>
           </ul>
         </div>
@@ -38,15 +36,14 @@
 
     <main class="main-container">
       <h1 class="visually-hidden">О приложении Pink</h1>
-      <div class="main__img-place"></div>
 
       <section class="app-download">
         <h2 class="visually-hidden">Скачать приложение</h2>
-        <button class="button app-download__button" type="button">Скачать приложение</button>
+        <a class="app-download__link" href="#"><span class="app-download__link-text">Скачать приложение</span></a>
         <ul class="app-download__images">
-          <li><img class="app-download__img apple-logo" src="#" width="47" height="56" alt="Логотип Apple"></li>
-          <li><img class="app-download__img android-logo" src="#" width="43" height="47" alt="Логотип Android"></li>
-          <li><img class="app-download__img microsoft-logo" src="#" width="44" height="41" alt="Логотип Microsoft"></li>
+          <li><a class="app-download_img-link"><img class="app-download__img apple-logo" src="http://placehold.it/150x100" width="47" height="56" alt="Логотип Apple"></a></li>
+          <li><a class="app-download_img-link"><img class="app-download__img android-logo" src="http://placehold.it/150x100" width="43" height="47" alt="Логотип Android"></a></li>
+          <li><a class="app-download_img-link"><img class="app-download__img microsoft-logo" src="http://placehold.it/150x100" width="44" height="41" alt="Логотип Microsoft"></a></li>
         </ul>
         <p class="app-download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </section>
@@ -70,7 +67,7 @@
             <p class="app-description__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
-        <img class="app-description_image" src="#" width="157" height="320" alt="Всем привет! :-)">
+        <img class="app-description_image" src="http://placehold.it/150x100" width="157" height="320" alt="Всем привет! :-)">
 
         <div class="app-description__review">
           <span class="app-description__review-name">Николай Петров</span>
@@ -96,15 +93,15 @@
         <ul class="app-prices__list">
           <li class="app-prices__list-item">
             <p class="app-prices__list-text">розовый фильтр</p>
-            <img class="app-prices__list-img app-prices__list-img--yes" src="#" width="31" height="21" alt="Выбрано">
+            <img class="app-prices__list-img app-prices__list-img--yes" src="http://placehold.it/150x100" width="31" height="21" alt="Выбрано">
           </li>
           <li class="app-prices__list-item">
             <p class="app-prices__list-text">смайлики</p>
-            <img class="app-prices__list-img app-prices__list-img--yes" src="#" width="31" height="21" alt="Выбрано">
+            <img class="app-prices__list-img app-prices__list-img--yes" src="http://placehold.it/150x100" width="31" height="21" alt="Выбрано">
           </li>
           <li class="app-prices__list-item">
             <p class="app-prices__list-text">комментарии</p>
-            <img class="app-prices__list-img app-prices__list-img--no" src="#" width="27" height="26" alt="Не выбрано">
+            <img class="app-prices__list-img app-prices__list-img--no" src="http://placehold.it/150x100" width="27" height="26" alt="Не выбрано">
           </li>
         </ul>
 
@@ -126,11 +123,11 @@
       <ul class="contacts__list">
         <li class="contacts__list-item">
           <p class="contacts__key">Звоните:</p>
-          <p class="contacts__value">+7(812) 555-66-66</p>
+          <a class="contacts__value" href="tel:+78125556666">+7(812) 555-66-66</a>
         </li>
         <li class="contacts__list-item">
           <p class="contacts__key">Пишите:</p>
-          <p class="contacts__value">mail@htmlacademy.ru</p>
+          <a class="contacts__value" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </li>
         <li class="contacts__list-item">
           <p class="contacts__key">Приезжайте в гости:</p>
