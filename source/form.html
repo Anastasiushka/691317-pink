@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: PINK</title>
+  </head>
+
+  <body>
+    <header class="main-header">
+      <div class="main-menu">
+        <a href="index.html"><img class="main-menu__logo logo" src="http://placehold.it/150x100" width="75" height="22" alt="Логотип Pink"></a>
+        <button class="main-menu__toggle" type="button">Открыть меню</button>
+      </div>
+
+      <nav class="main-nav visually-hidden">
+        <a href="index.html"><img class="main-nav__logo logo" src="http://placehold.it/150x100" width="75" height="22" alt="Логотип Pink"></a>
+        <button class="main-nav__toggle" type="button">Закрыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <a class="site-list__link">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="https://htmlacademy.ru/">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="competition">
+      <h1 class="competition__header">Конкурс на самое безбашенное путешествие с Пинк</h1>
+
+      <p class="competition__description">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
+
+      <form class="competition-form" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="competition-form__fieldset">
+          <label class="competition-form__label" for="surname">фамилия:</label>
+          <div class="competition-form__item">
+            <input class="competition-form__input" id="surname" name="surname" type="text" placeholder="Укажите фамилию *" required>
+          </div>
+          <label class="competition-form__label" for="name">имя:</label>
+          <div class="competition-form__item">
+            <input class="competition-form__input" id="name" name="name" type="text" placeholder="Введите ваше имя *" required>
+          </div>
+          <label class="competition-form__label" for="patronymic">отчество:</label>
+          <div class="competition-form__item">
+            <input class="competition-form__input" id="patronymic" name="patronymic" type="text" placeholder="Ну и отчество тоже">
+          </div>
+        </fieldset>
+
+        <fieldset class="competition-form__fieldset">
+          <legend class="competition-form__fieldset-title">ваши безбашенные достижения в путешествии</legend>
+          <input class="competition-form__input" id="selfie" type="checkbox" name="achievements" value="selfie" checked>
+          <label class="competition-form__label" for="selfie">Сделал селфи с акулой</label>
+          <input class="competition-form__input" id="sunburn" type="checkbox" name="achievements" value="sunburn" checked>
+          <label class="competition-form__label" for="sunburn">Обгорел на пляже</label>
+          <input class="competition-form__input" id="norris" type="checkbox" name="achievements" value="norris">
+          <label class="competition-form__label" for="norris">Видел Чака Норриса</label>
+          <input class="competition-form__input" id="souvenirs" type="checkbox" name="achievements" value="souvenirs">
+          <label class="competition-form__label" for="souvenirs">Накупил сувениров</label>
+          <input class="competition-form__input" id="tower" type="checkbox" name="achievements" value="tower" checked>
+          <label class="competition-form__label" for="tower">Удержал башню</label>
+          <input class="competition-form__input" id="hotel" type="checkbox" name="achievements" value="hotel">
+          <label class="competition-form__label" for="hotel">Разгромил отель</label>
+        </fieldset>
+
+        <fieldset class="competition-form__fieldset">
+          <label class="competition-form__label" for="phone">номер телефона</label>
+          <div class="competition-form__item">
+            <input class="competition-form__input" id="phone" name="phone" type="text" placeholder="Номер, пожалуйста">
+          </div>
+          <label class="competition-form__label" for="email">адрес почты</label>
+          <div class="competition-form__item">
+            <input class="competition-form__input" id="email" name="email" type="email" placeholder="Введите почту *" required>
+          </div>
+        </fieldset>
+
+        <fieldset class="competition-form__fieldset">
+          <legend class="competition-form__fieldset-title">с каким приложением путешествовали?</legend>
+          <input class="competition-form__input" id="ios" type="radio" name="app" value="ios" checked>
+          <label class="competition-form__label" for="ios">Pink для iOS</label>
+          <input class="competition-form__input" id="android" type="radio" name="app" value="android">
+          <label class="competition-form__label" for="android">Pink на Android</label>
+          <input class="competition-form__input" id="windows" type="radio" name="app" value="windows">
+          <label class="competition-form__label" for="windows">Windows Phone</label>
+        </fieldset>
+
+        <fieldset class="competition-form__fieldset">
+          <label class="competition-form__label" for="emotions"></label>
+          <div class="competition-form__item">
+            <textarea class="competition-form__input competition-form__textarea" id="emotions" name="emotions-description" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </div>
+        </fieldset>
+
+        <button class="competition-form__button" type="submit">отправить форму</button>
+      </form>
+
+      <p class="competition-form__text"><span class="competition-form__text-inner">*</span> - обязательные поля</p>
+    </main>
+  </body>
+
+  <footer class="footer">
+    <ul class="footer__list">
+      <li class="footer__item">
+        <img class="footer__logo" src="http://placehold.it/150x100" width="147" height="40" alt="Логотип Pink">
+      </li>
+      <li class="footer__item">
+        <ul class="footer__social-icons social-icons__list">
+          <li class="social-icons__item">
+            <a class="social-icons__link" href="#" title="Go to Twitter page">
+              <span class="visually-hidden">Twitter</span>
+              <svg class="social-icons__icon"><!-- icon content --></svg>
+            </a>
+          </li>
+          <li class="social-icons__item">
+            <a class="social-icons__link" href ="#" title="Go to Facebook page">
+              <span class="visually-hidden">Facebook</span>
+              <svg class="social-icons__icon"><!-- icon content --></svg>
+            </a>
+          </li>
+          <li class="social-icons__item">
+            <a class="social-icons__link" href="#" title="Go to Youtube page">
+              <span class="visually-hidden">Youtube</span>
+              <svg class="social-icons__icon"><!-- icon content --></svg>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="footer__item">
+        <span class="footer__develop">Разработано</span>
+        <a class="footer__develop-link" href="#" title="Go to HTML Academy page">
+          <span class="visually-hidden">HTML Academy</span>
+          <svg class="footer__develop-icon"><!-- icon content --></svg>
+        </a>
+      </li>
+    </ul>
+  </footer>
+</html>
