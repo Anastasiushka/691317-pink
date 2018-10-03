@@ -41,17 +41,16 @@
         <h2 class="visually-hidden">Скачать приложение</h2>
         <a class="app-download__link" href="#"><span class="app-download__link-text">Скачать приложение</span></a>
         <ul class="app-download__images">
-          <li><a class="app-download_img-link"><img class="app-download__img apple-logo" src="http://placehold.it/150x100" width="47" height="56" alt="Логотип Apple"></a></li>
-          <li><a class="app-download_img-link"><img class="app-download__img android-logo" src="http://placehold.it/150x100" width="43" height="47" alt="Логотип Android"></a></li>
-          <li><a class="app-download_img-link"><img class="app-download__img microsoft-logo" src="http://placehold.it/150x100" width="44" height="41" alt="Логотип Microsoft"></a></li>
+          <li><a class="app-download__img-link"><img class="app-download__img" src="http://placehold.it/150x100" width="47" height="56" alt="Логотип Apple"></a></li>
+          <li><a class="app-download__img-link"><img class="app-download__img" src="http://placehold.it/150x100" width="43" height="47" alt="Логотип Android"></a></li>
+          <li><a class="app-download__img-link"><img class="app-download__img" src="http://placehold.it/150x100" width="44" height="41" alt="Логотип Microsoft"></a></li>
         </ul>
         <p class="app-download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </section>
 
       <section class="app-description">
         <h2 class="visually-hidden">Что вы получите, используя приложение Pink</h2>
-        <h2 class="app-description__header-main">Устали от серости мегаполиса?</h2>
-        <h2 class="app-description__header-main">Нам есть, что вам предложить!</h2>
+        <p class="app-description__header-main">Устали от серости мегаполиса? Нам есть, что вам предложить!</p>
 
         <ul class="app-description__list">
           <li class="app-description__list-item">
@@ -72,14 +71,17 @@
         <div class="app-description__review">
           <span class="app-description__review-name">Николай Петров</span>
           <p class="app-description__review-text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серый вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
-          <form class="app-description__pins" action="#" method="post">
-            <input class="hidden" id="one" type="radio" name="sliders" value="first" checked>
-            <label class="slider-radio first-slider" for="one"></label>
-            <input class="hidden" id="two" type="radio" name="sliders" value="second">
-            <label class="slider-radio second-slider" for="two"></label>
-            <input class="hidden" id="three" type="radio" name="sliders" value="third">
-            <label class="slider-radio third-slider" for="three"></label>
-          </form>
+          <ul class="app-description__pins">
+            <li class="app-description__pin">
+              <button class="app-description__button app-description__button--checked" type="button">
+            </li>
+            <li class="app-description__pin">
+              <button class="app-description__button" type="button">
+            </li>
+            <li class="app-description__pin">
+              <button class="app-description__button" type="button">
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -105,14 +107,17 @@
           </li>
         </ul>
 
-        <form class="app-prices__pins" action="#" method="post">
-            <input class="hidden" id="first" type="radio" name="sliders" value="first">
-            <label class="slider-radio first-slider" for="first"></label>
-            <input class="hidden" id="second" type="radio" name="sliders" value="second" checked>
-            <label class="slider-radio second-slider" for="second"></label>
-            <input class="hidden" id="third" type="radio" name="sliders" value="third">
-            <label class="slider-radio third-slider" for="third"></label>
-          </form>
+        <ul class="app-prices__pins">
+          <li class="app-prices__pin">
+            <button class="app-prices__button" type="button">
+          </li>
+          <li class="app-prices__pin">
+            <button class="app-prices__button app-prices__button--checked" type="button">
+          </li>
+          <li class="app-prices__pin">
+            <button class="app-prices__button" type="button">
+          </li>
+        </ul>
       </section>
     </main>
   </body>
