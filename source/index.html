@@ -3,18 +3,22 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans>" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
 
   <body>
     <header class="main-header">
       <div class="main-menu">
-        <img class="main-menu__logo logo" src="http://placehold.it/150x100" width="75" height="22" alt="Логотип Pink">
+        <img class="main-menu__logo logo" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Pink">
         <button class="main-menu__toggle" type="button">Открыть меню</button>
       </div>
 
       <nav class="main-nav visually-hidden">
-        <img class="main-nav__logo logo" src="http://placehold.it/150x100" width="75" height="22" alt="Логотип Pink">
-        <button class="main-nav__toggle" type="button">Закрыть меню</button>
+        <div class="main-nav__container">
+          <img class="main-nav__logo logo" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Pink">
+          <button class="main-nav__toggle" type="button">Закрыть меню</button>
+        </div>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
@@ -39,11 +43,15 @@
 
       <section class="app-download">
         <h2 class="visually-hidden">Скачать приложение</h2>
-        <a class="app-download__link" href="#"><span class="app-download__link-text">Скачать приложение</span></a>
+          <a class="app-download__link" href="#">
+            <div class="app-download__link-container">
+              <span class="app-download__link-text">Скачать приложение</span>
+            </div>
+          </a>
         <ul class="app-download__images">
-          <li><a class="app-download__img-link"><img class="app-download__img" src="http://placehold.it/150x100" width="47" height="56" alt="Логотип Apple"></a></li>
-          <li><a class="app-download__img-link"><img class="app-download__img" src="http://placehold.it/150x100" width="43" height="47" alt="Логотип Android"></a></li>
-          <li><a class="app-download__img-link"><img class="app-download__img" src="http://placehold.it/150x100" width="44" height="41" alt="Логотип Microsoft"></a></li>
+          <li><a class="app-download__img-link"><span class="app-download__apple">Логотип Apple></span></a></li>
+          <li><a class="app-download__img-link"><span class="app-download__android">Логотип Android</span></a></li>
+          <li><a class="app-download__img-link"><span class="app-download__microsoft">Логотип Microsoft</span></a></li>
         </ul>
         <p class="app-download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </section>
@@ -66,58 +74,61 @@
             <p class="app-description__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
-        <img class="app-description_image" src="http://placehold.it/150x100" width="157" height="320" alt="Всем привет! :-)">
+        <img class="app-description_image" src="../img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Всем привет! :-)">
 
         <div class="app-description__review">
           <span class="app-description__review-name">Николай Петров</span>
           <p class="app-description__review-text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серый вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
-          <ul class="app-description__pins">
-            <li class="app-description__pin">
-              <button class="app-description__button app-description__button--checked" type="button">
-            </li>
-            <li class="app-description__pin">
-              <button class="app-description__button" type="button">
-            </li>
-            <li class="app-description__pin">
-              <button class="app-description__button" type="button">
-            </li>
-          </ul>
+          <div class="app-description__pins">
+            <ul class="pins">
+              <li class="pin">
+                <button class="pin__button pin__button--checked" type="button">
+              </li>
+              <li class="pin">
+                <button class="pin__button" type="button">
+              </li>
+              <li class="pin">
+                <button class="pin__button" type="button">
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 
       <section class="app-prices">
-        <div class="app-prices__header">
-          <span class="app-prices__hit">хит</span>
-          <span class="app-prices__text">стандарт</span>
-          <span class="app-prices__price">3,99 USD</span>
+        <div class="app-prices__container">
+          <div class="app-prices__header">
+            <span class="app-prices__hit">хит</span>
+            <span class="app-prices__text">стандарт</span>
+            <span class="app-prices__price">3,99 USD</span>
+          </div>
         </div>
 
         <ul class="app-prices__list">
           <li class="app-prices__list-item">
-            <p class="app-prices__list-text">розовый фильтр</p>
-            <img class="app-prices__list-img app-prices__list-img--yes" src="http://placehold.it/150x100" width="31" height="21" alt="Выбрано">
+            <p class="app-prices__list-text app-prices__list-img--yes">розовый фильтр</p>
           </li>
           <li class="app-prices__list-item">
-            <p class="app-prices__list-text">смайлики</p>
-            <img class="app-prices__list-img app-prices__list-img--yes" src="http://placehold.it/150x100" width="31" height="21" alt="Выбрано">
+            <p class="app-prices__list-text app-prices__list-img--yes">смайлики</p>
           </li>
           <li class="app-prices__list-item">
-            <p class="app-prices__list-text">комментарии</p>
-            <img class="app-prices__list-img app-prices__list-img--no" src="http://placehold.it/150x100" width="27" height="26" alt="Не выбрано">
+            <p class="app-prices__list-text app-prices__list-img--no">комментарии</p>
           </li>
         </ul>
 
-        <ul class="app-prices__pins">
-          <li class="app-prices__pin">
-            <button class="app-prices__button" type="button">
-          </li>
-          <li class="app-prices__pin">
-            <button class="app-prices__button app-prices__button--checked" type="button">
-          </li>
-          <li class="app-prices__pin">
-            <button class="app-prices__button" type="button">
-          </li>
-        </ul>
+        <div class="app-prices__pins">
+          <ul class="pins">
+            <li class="pin">
+              <button class="pin__button" type="button">
+            </li>
+            <li class="pin">
+              <button class="pin__button pin__button--checked" type="button">
+            </li>
+            <li class="pin">
+              <button class="pin__button" type="button">
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
   </body>
@@ -140,6 +151,7 @@
         </li>
       </ul>
       <div class="contacts__map">
+        <span class="visually-hidden">Мы находимся здесь"></span>
       </div>
     </section>
   </footer>

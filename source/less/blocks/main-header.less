@@ -1,0 +1,109 @@
+.main-header {
+  background-color: rgb(31, 41, 52);
+  background: url("../img/bg-back-mobile@1x.jpg") no-repeat, url("../img/iphone-hand-mobile@1x.png") no-repeat;
+  min-height: 462px;
+  width: 320px;
+}
+
+.main-menu {
+  background-color: rgba(0, 0, 0, 0.3);
+  min-height: 66px;
+  width: 320px;
+}
+
+.main-nav {
+  background-color: rgb(40, 54, 69);
+}
+
+.main-nav__container {
+  width: 320px;
+  min-height: 69px;
+  border-width: 1px;
+  border-right: none;
+  border-left: none;
+  border-top-color: rgb(40, 54, 69);
+  border-bottom-color: rgb(0, 0 ,0);
+}
+
+.main-menu__toggle {
+  position: absolute;
+  top: 20px;
+  left: 250px;
+  width: 50px;
+  height: 24px;
+  font-size: 0;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.main-menu__toggle::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 24px;
+  top: 0;
+  left: 0;
+  background-image: url("../img/icon-menu-burger.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 20px;
+  left: 275px;
+  width: 24px;
+  height: 23px;
+  font-size: 0;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 23px;
+  top: 0;
+  left: 0;
+  background-image: url("../img/icon-menu-cross.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.main-nav__list{
+  list-style: none;
+  padding: 0;
+}
+
+.site-list__item {
+  width: 320px;
+  min-height: 63px;
+  text-align: center;
+  vertical-align: middle;
+  border-right: none;
+  border-left: none;
+  border-width: 1px;
+  border-top-color: rgb(72, 84, 97);
+  border-bottom-color: rgb(0, 0 ,0); 
+}
+
+.site-list__link {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.main__title {
+  color: rgb(255, 255, 255);
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+}
