@@ -1,8 +1,15 @@
 .main-header {
+  position: relative;
   background-color: rgb(31, 41, 52);
-  background: url("../img/bg-back-mobile@1x.jpg") no-repeat, url("../img/iphone-hand-mobile@1x.png") no-repeat;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
   min-height: 462px;
   width: 320px;
+}
+
+.main-header__img {
+  position: absolute;
+  top: 172px;
 }
 
 .main-menu {
@@ -22,7 +29,7 @@
   border-right: none;
   border-left: none;
   border-top-color: rgb(40, 54, 69);
-  border-bottom-color: rgb(0, 0 ,0);
+  border-bottom-color: rgb(0, 0, 0);
 }
 
 .main-menu__toggle {
@@ -73,7 +80,7 @@
   background-position: 0 0;
 }
 
-.main-nav__list{
+.main-nav__list {
   list-style: none;
   padding: 0;
 }
@@ -87,7 +94,7 @@
   border-left: none;
   border-width: 1px;
   border-top-color: rgb(72, 84, 97);
-  border-bottom-color: rgb(0, 0 ,0);
+  border-bottom-color: rgb(0, 0, 0);
 }
 
 .site-list__link {
