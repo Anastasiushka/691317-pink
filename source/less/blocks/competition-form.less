@@ -1,0 +1,138 @@
+.competition-form__fieldset {
+  border: none;
+  margin: 0;
+  width: 280px;
+  padding: 40px 20px 40px 20px;
+}
+
+
+.competition-form__label,
+.competition-form__input {
+  color: rgb(40, 54, 69);
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+.competition-form__input {
+  width: 256px;
+  padding: 12px 0 12px 20px;
+  border: 2px solid rgb(229, 229, 229);
+  background: rgb(255, 255, 255);
+  border-radius: 2px;
+}
+
+.competition-form__fieldset-title,
+.competition-form__label--pink {
+  color: rgb(210, 40, 86);
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.competition-form__fieldset--grey {
+  background-color: rgb(242, 242, 242);
+}
+
+.competition-form__input-checkbox {
+  width: 35px;
+  padding: 0;
+  visibility: hidden;
+}
+
+.competition-form__label-checkbox {
+  position: relative;
+}
+
+.competition-form__label-checkbox::before {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  border-radius: 2px;
+  border: 2px solid rgb(229, 229, 229);
+  background: rgb(255, 255, 255);
+  top: -10px;
+  left: -45px;
+}
+
+.competition-form__label-checkbox::after {
+  content: "";
+  visibility: hidden;
+  position: absolute;
+  width: 18px;
+  height: 9px;
+  background: rgb(255, 255, 255);
+  border: 2px solid rgb(210, 40, 86);
+  border-top: none;
+  border-right: none;
+  transform: rotate(-45deg);
+  top: 1.5px;
+  left: -35px;
+}
+
+.competition-form__input-checkbox:checked + .competition-form__label-checkbox::after {
+  visibility: visible;
+}
+
+.competition-form__input-radio {
+  width: 35px;
+  padding: 0;
+  visibility: hidden;
+}
+
+.competition-form__label-radio {
+  position: relative;
+}
+
+.competition-form__label-radio::before {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 2px solid rgb(229, 229, 229);
+  background: rgb(255, 255, 255);
+  top: -10px;
+  left: -45px;
+}
+
+.competition-form__label-radio::after {
+  content: "";
+  visibility: hidden;
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: rgb(210, 40, 86);
+  top: 1.5px;
+  left: -32.5px;
+}
+
+.competition-form__input-radio:checked + .competition-form__label-radio::after {
+  visibility: visible;
+}
+
+.competition-form__textarea {
+  overflow: auto;
+  resize: none;
+  width: 256px;
+  height: 173px;
+  background: rgb(255, 255, 255);
+  border: 2px solid rgb(229, 229, 229);
+  border-radius: 2px;
+  padding: 12px 0 12px 20px;
+}
+
+.competition-form__button {
+  width: 280px;
+  height: 63px;
+  background-color: rgb(42, 171, 109);
+  border: none;
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+}
