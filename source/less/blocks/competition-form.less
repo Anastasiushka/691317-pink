@@ -53,14 +53,14 @@
   margin-bottom: 32px;
 }
 
-.competition-form__name-fieldset {
+.competition-form__fieldset--name {
   margin-bottom: 27px;
   width: 280px;
   padding-left: 20px;
   padding-right: 20px;
 }
 
-.competition-form__achievement {
+.competition-form__fieldset-title--achievement {
   width: 225px;
   text-align: center;
   position: absolute;
@@ -68,7 +68,7 @@
   left: 48px;
 }
 
-.competition-form__input-checkbox {
+.competition-form__input--checkbox {
   width: 35px;
   height: 35px;
   padding: 0;
@@ -76,13 +76,13 @@
   margin-bottom: 17px;
 }
 
-.competition-form__label-checkbox {
+.competition-form__label--checkbox {
   position: relative;
   top: 10px;
   left: 65px;
 }
 
-.competition-form__label-checkbox::before {
+.competition-form__label--checkbox::before {
   content: "";
   position: absolute;
   width: 35px;
@@ -94,9 +94,8 @@
   left: -65px;
 }
 
-.competition-form__label-checkbox::after {
+.competition-form__input--checkbox:checked + .competition-form__label--checkbox::after {
   content: "";
-  visibility: hidden;
   position: absolute;
   width: 18px;
   height: 9px;
@@ -109,15 +108,11 @@
   left: -55px;
 }
 
-.competition-form__input-checkbox:checked + .competition-form__label-checkbox::after {
-  visibility: visible;
-}
-
-.competition-form__contacts-fieldset {
+.competition-form__fieldset--contacts {
   margin-bottom: 25px;
 }
 
-.competition-form__app {
+.competition-form__fieldset-title--app {
   width: 225px;
   text-align: center;
   position: absolute;
@@ -125,7 +120,7 @@
   left: 48px;
 }
 
-.competition-form__input-radio {
+.competition-form__input--radio {
   width: 35px;
   height: 35px;
   padding: 0;
@@ -133,13 +128,13 @@
   margin-bottom: 11px;
 }
 
-.competition-form__label-radio {
+.competition-form__label--radio {
   position: relative;
   top: 10px;
   left: 65px;
 }
 
-.competition-form__label-radio::before {
+.competition-form__label--radio::before {
   content: "";
   position: absolute;
   width: 35px;
@@ -151,9 +146,8 @@
   left: -65px;
 }
 
-.competition-form__label-radio::after {
+.competition-form__input--radio:checked + .competition-form__label--radio::after {
   content: "";
-  visibility: hidden;
   position: absolute;
   width: 14px;
   height: 14px;
@@ -163,11 +157,7 @@
   left: -52.5px;
 }
 
-.competition-form__input-radio:checked + .competition-form__label-radio::after {
-  visibility: visible;
-}
-
-.competition-form__emotions {
+.competition-form__label--emotions {
   position: relative;
   left: 48px;
 }

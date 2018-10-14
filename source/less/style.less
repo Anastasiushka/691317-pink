@@ -1,5 +1,8 @@
+@import 'blocks/normalize.less';
+@import 'blocks/fonts.less';
+@import 'blocks/helpers.less';
+@import 'blocks/general.less';
 @import 'blocks/main-header.less';
-@import 'blocks/main-container.less';
 @import 'blocks/app-download.less';
 @import 'blocks/pins.less';
 @import 'blocks/app-description.less';
@@ -12,23 +15,3 @@
 @import 'blocks/photo.less';
 @import 'blocks/photo-item.less';
 @import 'blocks/photo-post.less';
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.hidden {
-  visibility: hidden;
-}
-
-body {
-  margin: 0 auto;
-  font-family: "Open Sans", "Arial", sans-serif;
-}
