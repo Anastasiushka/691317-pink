@@ -22,11 +22,15 @@
     position: relative;
   }
 
-  .app-prices--mobile-hidden {
+
+  .app-prices__heading-empty--mobile-hidden,
+  .app-prices__heading-text--mobile-hidden,
+  .app-prices__price--mobile-hidden,
+  .app-prices__cell--mobile-hidden {
     display: none;
   }
 
-  .app-prices__heading-cell {
+  .app-prices__cell--heading {
     background-color: rgb(40, 54, 69);
     text-align: center;
     vertical-align: middle;
@@ -73,7 +77,7 @@
     transform: rotate(-45deg);
   }
 
-  .app-prices__yes::after {
+  .app-prices__cell--yes::after {
     content: "";
     position: absolute;
     width: 31px;
@@ -85,7 +89,7 @@
     background-position: 0 0;
   }
 
-  .app-prices__no::after {
+  .app-prices__cell--no::after {
     content: "";
     position: absolute;
     width: 27px;
@@ -97,12 +101,12 @@
     background-position: 0 0;
   }
 
-  .app-prices--mobile-showed {
+  .app-prices__cell--mobile-showed {
     width: 280px;
     padding-left: 22px;
   }
 
-  .app-prices--mobile-cut {
+  .app-prices__cell--mobile-cut {
     width: 20px;
     overflow: hidden;
     border-right: none;
@@ -191,7 +195,7 @@
     transform: rotate(-45deg);
   }
 
-  .app-prices__text {
+  .app-prices__cell--text {
     color: rgb(40, 54, 69);
     font-size: 14px;
     line-height: 30px;
@@ -200,17 +204,10 @@
   }
 
   .app-prices__mobile {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+    display: none;
   }
 
-  .app-prices__yes::after {
+  .app-prices__cell--yes::after {
     content: "";
     position: absolute;
     width: 31px;
@@ -222,7 +219,7 @@
     background-position: 0 0;
   }
 
-  .app-prices__no::after {
+  .app-prices__cell--no::after {
     content: "";
     position: absolute;
     width: 27px;
@@ -235,14 +232,7 @@
   }
 
   .app-prices__pins {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+    display: none;
   }
 }
 
@@ -268,18 +258,18 @@
     font-size: 24px;
   }
 
-  .app-prices__text {
+  .app-prices__cell--text {
     font-size: 18px;
     padding-left: 23px;
     width: 214px;
   }
 
-  .app-prices__yes::after {
+  .app-prices__cell--yes::after {
     top: 23px;
     left: 105px;
   }
 
-  .app-prices__no::after {
+  .app-prices__cell--no::after {
     top: 18px;
     left: 100px;
   }
