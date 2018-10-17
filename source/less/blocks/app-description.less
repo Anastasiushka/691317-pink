@@ -1,13 +1,40 @@
+.app-description {
+  padding-bottom: 25px;
+}
+
+.app-description__main-headers {
+  padding-top: 15px;
+  padding-bottom: 8px;
+  margin: 0;
+}
+
 .app-description__header-main {
   color: rgb(40, 54, 69);
   font-size: 24px;
   line-height: 30px;
   font-weight: 300;
+  text-align: center;
+}
+
+.app-description__list-container {
+  background-color: rgb(242, 242, 242);
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .app-description__list {
   list-style: none;
   padding: 0;
+  margin: 0;
+}
+
+.app-description__list-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .app-description__header {
@@ -15,6 +42,8 @@
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
+  text-align: center;
+  margin: 0;
 }
 
 .app-description__text {
@@ -22,6 +51,27 @@
   font-size: 16px;
   line-height: 24px;
   font-weight: 300;
+  text-align: center;
+  width: 280px;
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.app-description_image--mobile {
+  margin-top: 10px;
+}
+
+.app-description_image--tablet {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.app-description_image--desktop {
+  position: absolute;
+  width: 0;
+  height: 0;
 }
 
 .app-description__review-list {
@@ -29,11 +79,20 @@
   padding: 0;
 }
 
+.app-description__review-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .app-description__review-name {
   color: rgb(0, 0, 0);
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
+  margin: 0;
+  margin-top: 25px;
+  margin-bottom: 15px;
 }
 
 .app-description__review-text {
@@ -41,4 +100,302 @@
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
+  width: 280px;
+  text-align: center;
+  margin: 0;
+}
+
+.app-description__pins {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 660px) {
+  .app-description__review-desc,
+  .app-description__effect {
+    display: none;
+  }
+}
+
+@media (min-width: 660px) {
+  .app-description {
+    padding-bottom: 15px;
+  }
+
+  .app-description__main-headers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 45px;
+  }
+
+  .app-description__header-main {
+    font-size: 40px;
+    line-height: 48px;
+    margin: 0;
+  }
+
+  .app-description__header-main--short {
+    width: 400px;
+  }
+
+  .app-description__list-container {
+    position: relative;
+    padding-bottom: 2px;
+  }
+
+  .app-description_image--mobile {
+    position: absolute;
+    width: 0;
+    height: 0;
+  }
+
+  .app-description_image--tablet {
+    position: absolute;
+    width: 267px;
+    height: 483px;
+    top: 0;
+    left: 20px;
+  }
+
+  .app-description__list {
+    margin-left: 300px;
+  }
+
+  .app-description__list-item {
+    display: block;
+  }
+
+  .app-description__header {
+    text-align: left;
+  }
+
+  .app-description__text {
+    width: 297px;
+    text-align: left;
+    font-size: 14px;
+  }
+
+  .app-description__effect {
+    position: relative;
+    margin-bottom: 225px;
+    margin-left: 330px;
+    margin-top: 100px;
+  }
+
+  .app-description__effect-img {
+    position: absolute;
+    left: -300px;
+  }
+
+  .app-description__effect-heading {
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    margin-bottom: 0;
+    width: 165px;
+  }
+
+  .app-description__effect-paragraph {
+    color: rgb(40, 54, 69);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    margin-top: 7px;
+    margin-bottom: 11px;
+    width: 290px;
+  }
+
+  .app-description__effect-link {
+    color: rgb(210, 40, 86);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+  }
+
+  .app-description__review-item {
+    position: relative;
+  }
+
+  .app-description__review-name {
+    margin-bottom: 0;
+  }
+
+  .app-description__review-desc {
+    color: rgb(40, 54, 69);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+  }
+
+  .app-description__review-text {
+    font-size: 18px;
+    width: 618px;
+    position: absolute;
+    top: -95px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .app-description__main-headers {
+    margin-top: 30px;
+    margin-bottom: 70px;
+  }
+
+  .app-description__header-main {
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .app-description__wrapper {
+    background-color: rgb(242, 242, 242);
+  }
+
+  .app-description__header-main--short {
+    width: 500px;
+  }
+
+  .app-description__list-container {
+    padding-top: 360px;
+  }
+
+  .app-description__list {
+    display: flex;
+    margin: 0;
+  }
+
+  .app-description__list-item {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .app-description__header {
+    font-size: 30px;
+    line-height: 30px;
+    width: 229px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .app-description__text {
+    width: 236px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .app-description_image--tablet {
+    position: absolute;
+    width: 0;
+    height: 0;
+  }
+
+  .app-description_image--desktop {
+    position: absolute;
+    width: 296px;
+    height: 305px;
+  }
+
+  .app-description_image--desktop-1 {
+    top: 0;
+    left: 135px;
+  }
+
+  .app-description_image--desktop-2 {
+    top: 0;
+    left: 455px;
+  }
+
+  .app-description_image--desktop-3 {
+    top: 0;
+    left: 775px;
+  }
+
+  .app-description__effect {
+    margin-bottom: 225px;
+    margin-left: 500px;
+    margin-top: 125px;
+    padding-bottom: 115px;
+  }
+
+  .app-description__effect-heading {
+    width: 320px;
+  }
+
+  .app-description__effect-paragraph {
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    width: 500px;
+  }
+
+  .app-description__effect-link {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .app-description__review-item {
+    margin-bottom: 5px;
+  }
+
+  .app-description__review-name {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 0;
+    margin-top: 90px;
+  }
+
+  .app-description__review-desc {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .app-description__review-text {
+    font-size: 18px;
+    top: -35px;
+    width: 700px;
+  }
+
+  .app-description__review-name::before {
+    content: "";
+    position: absolute;
+    width: 79px;
+    height: 63px;
+    top: -155px;
+    left: 562px;
+    background-image: url("../img/icon-quotes.svg");
+    background-repeat: no-repeat;
+  }
+
+  .app-description__review-text::before {
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 41px;
+    top: 20px;
+    left: -120px;
+    background-image: url("../img/icon-review-arrow-left.svg");
+    background-repeat: no-repeat;
+  }
+
+  .app-description__review-text::after {
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 41px;
+    top: 20px;
+    left: 820px;
+    background-image: url("../img/icon-review-arrow-right.svg");
+    background-repeat: no-repeat;
+  }
+
+  .app-description__pins {
+    display: none;
+  }
 }

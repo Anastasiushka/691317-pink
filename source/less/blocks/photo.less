@@ -1,11 +1,9 @@
 .photo {
   background-color: rgb(255, 255, 255);
   width: 320px;
-}
-
-.photo__list {
-  list-style: none;
-  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .photo__text {
@@ -13,4 +11,64 @@
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
+  width: 280px;
+  text-align: center;
+}
+
+.photo__text-container {
+  margin-top: 5px;
+  margin-bottom: 40px;
+}
+
+.photo__text--up {
+  width: 240px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.photo__text--down {
+  width: 280px;
+  margin: 0;
+}
+
+@media (min-width: 660px) {
+  .photo {
+    width: 660px;
+  }
+
+  .photo__text {
+    font-size: 18px;
+  }
+
+  .photo__text--up {
+    width: 500px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  .photo__text-container {
+    margin-top: 30px;
+    margin-bottom: 70px;
+  }
+
+  .photo__text--down {
+    width: 620px;
+    margin: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .photo {
+    width: 1200px;
+  }
+
+  .photo__text--up {
+    width: 600px;
+    margin-bottom: 70px;
+  }
+
+  .photo__text-container {
+    margin-top: -10px;
+    margin-bottom: 62px;
+  }
 }
