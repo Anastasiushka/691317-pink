@@ -99,6 +99,11 @@
     flex-wrap: wrap;
   }
 
+  .photo__item {
+    display: flex;
+    flex-direction: column;
+  }
+
   .photo__panorama--mobile {
     position: absolute;
     width: 0;
@@ -120,9 +125,11 @@
     width: 250px;
     padding: 25px 25px 22px 25px;
     margin: 0 0 20px 20px;
+    min-height: 105px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex-grow: 1;
   }
 
   .photo__description--panorama {
@@ -130,6 +137,7 @@
     position: relative;
     padding: 25px 25px 13px 25px;
     margin: 1px 20px 50px 20px;
+    min-height: 82px;
   }
 
   .photo__paragraph {
@@ -197,6 +205,7 @@
   .photo__description {
     width: 250px;
     padding: 25px 25px 19px 25px;
+    min-height: 111px;
     margin: 0 0 55px 0;
   }
 
@@ -205,6 +214,7 @@
     position: relative;
     padding: 25px 25px 13px 25px;
     margin: 1px 0 50px 0;
+    min-height: 59px;
   }
 
   .photo__paragraph--panorama {
