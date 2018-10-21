@@ -2,9 +2,16 @@
   background-color: rgb(255, 255, 255);
   width: 320px;
   padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 20px;
 }
 
@@ -12,28 +19,42 @@
   list-style: none;
   padding: 0;
   width: 180px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-top: 40px;
 }
 
 .social-icons__item {
-  width: 42px;
-  height: 42px;
+  width: 45px;
+  height: 45px;
   background-color: rgb(255, 255, 255);
   border-style: solid;
   border-width: 3px;
   border-color: rgba(233, 235, 236);
   border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   cursor: pointer;
 }
 
 .footer__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 22px;
   margin-bottom: 40px;
 }
@@ -46,26 +67,21 @@
   margin-right: 15px;
 }
 
-.footer__logo--desktop {
-  position: absolute;
-  width: 0;
-  height: 0;
-}
-
-@media (max-width: 660px) {
-  .footer--mobile-hidden {
-    display: none;
-  }
-}
-
 @media (min-width: 660px) {
   .footer {
     width: 620px;
     padding: 27px 20px 35px 20px;
     margin: 0;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: baseline;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 
   .social-icons__list,

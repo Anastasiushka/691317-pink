@@ -2,9 +2,16 @@
   background-color: rgb(242, 242, 242);
   min-height: 382px;
   padding-top: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (max-width: 660px) {
@@ -66,7 +73,9 @@
     background-image: url("../img/bg-hit.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
   }
 
   .app-prices__label {
@@ -78,7 +87,9 @@
     line-height: 30px;
     font-weight: 600;
     text-transform: uppercase;
-    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
   }
 
   .app-prices__cell--yes::after {
@@ -137,10 +148,14 @@
   }
 
   .app-prices__table {
-    background-color: rgb(255, 255, 255);
+    background-color: transparent;
     width: 620px;
     height: 220px;
     border-collapse: collapse;
+  }
+
+  .app-prices__row {
+    background-color: rgb(255, 255, 255);
   }
 
   .app-prices__cell {
@@ -193,7 +208,9 @@
     background-image: url("../img/bg-hit-tablet.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
   }
 
   .app-prices__label {
@@ -205,7 +222,9 @@
     line-height: 30px;
     font-weight: 600;
     text-transform: uppercase;
-    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
   }
 
   .app-prices__cell--text {
@@ -291,8 +310,15 @@
     background-color: rgb(242, 242, 242);
     min-height: 380px;
     padding-top: 150px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }

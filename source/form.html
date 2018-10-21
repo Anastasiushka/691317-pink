@@ -11,9 +11,11 @@
       <nav class="main-nav">
         <div class="main-nav__container">
           <a class="main-nav__logo" href="index.html">
-            <img class="main-nav__logo--mobile" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Pink">
-            <img class="main-nav__logo--tablet" src="img/logo-pink-white-tablet.svg" width="147" height="40" alt="Логотип Pink">
-            <img class="main-nav__logo--desktop" src="img/logo-pink-white-desktop.svg" width="147" height="40" alt="Логотип Pink">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+              <img class="main-nav__logo" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Pink">
+            </picture>
           </a>
           <button class="main-nav__toggle" type="button">Показать/скрыть меню</button>
         </div>
@@ -112,8 +114,10 @@
   </body>
 
   <footer class="footer">
-    <img class="footer__logo--mobile" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип Pink">
-    <img class="footer__logo--desktop" src="img/logo-pink-blue-desktop.svg" width="147" height="40" alt="Логотип Pink">
+    <picture>
+      <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
+      <img class="footer__logo" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип Pink">
+    </picture>
     <ul class="footer__social-icons social-icons__list">
       <li class="social-icons__item">
         <a class="social-icons__link" href="#" title="Перейти на страницу Twitter">
