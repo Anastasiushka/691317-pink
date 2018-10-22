@@ -2,23 +2,15 @@
   background-color: rgb(242, 242, 242);
   min-height: 382px;
   padding-top: 90px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 @media (max-width: 660px) {
   .app-prices__table {
     background-color: rgb(255, 255, 255);
     width: 320px;
-    height: 283px;
     border-collapse: collapse;
   }
 
@@ -39,6 +31,10 @@
 
   .app-prices__heading-row {
     height: 100px;
+  }
+
+  .app-prices__row {
+    height: 60px;
   }
 
   .app-prices__cell--heading {
@@ -73,9 +69,7 @@
     background-image: url("../img/bg-hit.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
-    -webkit-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-            transform: rotate(45deg);
+    transform: rotate(45deg);
   }
 
   .app-prices__label {
@@ -87,9 +81,7 @@
     line-height: 30px;
     font-weight: 600;
     text-transform: uppercase;
-    -webkit-transform: rotate(-45deg);
-        -ms-transform: rotate(-45deg);
-            transform: rotate(-45deg);
+    transform: rotate(-45deg);
   }
 
   .app-prices__cell--yes::after {
@@ -150,12 +142,12 @@
   .app-prices__table {
     background-color: transparent;
     width: 620px;
-    height: 220px;
     border-collapse: collapse;
   }
 
   .app-prices__row {
     background-color: rgb(255, 255, 255);
+    height: 45px;
   }
 
   .app-prices__cell {
@@ -208,9 +200,7 @@
     background-image: url("../img/bg-hit-tablet.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
-    -webkit-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-            transform: rotate(45deg);
+    transform: rotate(45deg);
   }
 
   .app-prices__label {
@@ -222,9 +212,7 @@
     line-height: 30px;
     font-weight: 600;
     text-transform: uppercase;
-    -webkit-transform: rotate(-45deg);
-        -ms-transform: rotate(-45deg);
-            transform: rotate(-45deg);
+    transform: rotate(-45deg);
   }
 
   .app-prices__cell--text {
@@ -271,11 +259,14 @@
 @media (min-width: 1200px) {
   .app-prices__table {
     width: 940px;
-    height: 285px;
   }
 
   .app-prices__heading-row {
     height: 100px;
+  }
+
+  .app-prices__row {
+    height: 60px;
   }
 
   .app-prices__cell {
@@ -313,12 +304,7 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 }
