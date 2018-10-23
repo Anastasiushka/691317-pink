@@ -10,10 +10,12 @@
     <header class="main-header">
       <nav class="main-nav">
         <div class="main-nav__container">
-          <img class="main-nav__logo--mobile" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Pink">
-          <img class="main-nav__logo--tablet" src="img/logo-pink-white-tablet.svg" width="147" height="40" alt="Логотип Pink">
-          <img class="main-nav__logo--desktop" src="img/logo-pink-white-desktop.svg" width="147" height="40" alt="Логотип Pink">
-          <button class="main-nav__toggle" type="button">Закрыть меню</button>
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+            <img class="main-nav__logo" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Pink">
+          </picture>
+          <button class="main-nav__toggle" type="button">Показать/скрыть меню</button>
         </div>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
@@ -34,15 +36,11 @@
       </nav>
 
       <div class="main-header__background">
-        <div class="main-menu">
-          <img class="main-menu__logo--mobile" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Pink">
-          <img class="main-menu__logo--tablet" src="img/logo-pink-white-tablet.svg" width="147" height="40" alt="Логотип Pink">
-          <button class="main-menu__toggle" type="button">Открыть меню</button>
-        </div>
-
-        <img class="main-header__img--mobile" src="img/iphone-hand-mobile@1x.png" width="255" height="290" alt="Телефон в руке">
-        <img class="main-header__img--tablet" src="img/iphone-hand-tablet@1x.png" width="690" height="549" alt="Телефон в руке">
-        <img class="main-header__img--desktop" src="img/iphone-hand-desktop@1x.png" width="570" height="650" alt="Телефон в руке">
+        <picture>
+          <source media="(min-width: 960px)" srcset="img/iphone-hand-desktop@1x.png">
+          <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png">
+          <img class="main-header__img" src="img/iphone-hand-mobile@1x.png" width="255" height="290" alt="Телефон в руке">
+        </picture>
       </div>
     </header>
 
@@ -87,7 +85,7 @@
             <ul class="app-description__list">
               <li class="app-description__list-item">
                 <h3 class="app-description__header">Поднимает настроение</h3>
-                <p class="app-description__text">Приложение поможет вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+                <p class="app-description__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
               </li>
               <li class="app-description__list-item">
                 <h3 class="app-description__header">Меняет мир вокруг</h3>
@@ -98,11 +96,14 @@
                 <p class="app-description__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
               </li>
             </ul>
-            <img class="app-description_image--mobile" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Телефон с веселым смайлом на экране">
-            <img class="app-description_image--tablet" src="img/iphone-screen-3-tablet@1x.png" width="267" height="483" alt="Телефон с веселым смайлом на экране">
-            <img class="app-description_image--desktop app-description_image--desktop-1" src="img/iphone-screen-1-desktop@1x.png" width="267" height="483"  alt="Телефон с веселым смайлом на экране">
-            <img class="app-description_image--desktop app-description_image--desktop-2" src="img/iphone-screen-2-desktop@1x.png" width="267" height="483"  alt="Телефон с веселым смайлом на экране">
-            <img class="app-description_image--desktop app-description_image--desktop-3" src="img/iphone-screen-3-desktop@1x.png" width="267" height="483"  alt="Телефон с веселым смайлом на экране">
+
+            <picture>
+              <source class="app-description_image--desktop-1" media="(min-width: 960px)" srcset="img/iphone-screen-1-desktop@1x.png">
+              <source class="app-description_image--desktop-2" media="(min-width: 960px)" srcset="img/iphone-screen-2-desktop@1x.png">
+              <source class="app-description_image--desktop-3" media="(min-width: 960px)" srcset="img/iphone-screen-3-desktop@1x.png">
+              <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png">
+              <img class="app-description_image" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Телефон с веселым смайлом на экране">
+            </picture>
           </div>
 
           <div class="app-description__effect">
@@ -257,8 +258,10 @@
   </body>
 
   <footer class="footer footer--mobile-hidden">
-    <img class="footer__logo--mobile" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип Pink">
-    <img class="footer__logo--desktop" src="img/logo-pink-blue-desktop.svg" width="147" height="40" alt="Логотип Pink">
+    <picture>
+      <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
+      <img class="footer__logo" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип Pink">
+    </picture>
     <ul class="footer__social-icons social-icons__list">
       <li class="social-icons__item">
         <a class="social-icons__link" href="#" title="Перейти на страницу Twitter">

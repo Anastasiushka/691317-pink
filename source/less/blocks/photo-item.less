@@ -28,17 +28,10 @@
   text-transform: uppercase;
 }
 
-.photo__panorama--tablet,
-.photo__panorama--desktop {
-  position: absolute;
-  width: 0;
-  height: 0;
-}
-
 .photo__description {
   background-color: rgb(242, 242, 242);
-  width: 245px;
-  padding: 19px 20px 19px 15px;
+  width: 265px;
+  padding: 19px 0 19px 15px;
   margin: 0 20px 20px 20px;
 }
 
@@ -99,13 +92,12 @@
     flex-wrap: wrap;
   }
 
-  .photo__panorama--mobile {
-    position: absolute;
-    width: 0;
-    height: 0;
+  .photo__item {
+    display: flex;
+    flex-direction: column;
   }
 
-  .photo__panorama--tablet {
+  .photo__panorama {
     position: relative;
     width: 660px;
     height: 510px;
@@ -116,24 +108,38 @@
     left: 491px;
   }
 
+  .photo__picture {
+    width: 300px;
+    height: 300px;
+    margin-right: 0;
+  }
+
   .photo__description {
     width: 250px;
-    padding: 25px 25px 19px 25px;
+    padding: 25px 25px 22px 25px;
     margin: 0 0 20px 20px;
+    min-height: 105px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex-grow: 1;
   }
 
   .photo__description--panorama {
     width: 570px;
     position: relative;
     padding: 25px 25px 13px 25px;
-    margin: 0 20px 50px 20px;
+    margin: 1px 20px 50px 20px;
+    min-height: 82px;
+  }
+
+  .photo__paragraph {
+    margin-bottom: 12px;
   }
 
   .photo__paragraph--panorama {
     width: 530px;
+    margin-top: -2px;
   }
 
   .photo__like-container--panorama {
@@ -160,38 +166,39 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .photo__list {
     width: 940px;
-    margin-left: 130px;
-    margin-right: 130px;
+    margin-left: 10px;
+    margin-right: 10px;
     justify-content: space-between;
   }
 
-  .photo__panorama--tablet {
-    position: absolute;
-    width: 0;
-    height: 0;
-  }
-
-  .photo__panorama--desktop {
+  .photo__panorama {
     position: relative;
-    width: 1200px;
+    width: 960px;
     height: 505px;
-    margin-left: -130px;
+    margin-left: -10px;
   }
 
   .photo__img-container {
-    left: 930px;
+    left: 680px;
   }
 
   .photo__img {
     width: 300px;
   }
 
+  .photo__picture {
+    width: 300px;
+    height: 400px;
+    margin: 0;
+  }
+
   .photo__description {
     width: 250px;
     padding: 25px 25px 19px 25px;
+    min-height: 111px;
     margin: 0 0 55px 0;
   }
 
@@ -199,7 +206,8 @@
     width: 890px;
     position: relative;
     padding: 25px 25px 13px 25px;
-    margin: 0 0 50px 0;
+    margin: 1px 0 50px 0;
+    min-height: 59px;
   }
 
   .photo__paragraph--panorama {

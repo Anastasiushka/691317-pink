@@ -11,11 +11,13 @@
       <nav class="main-nav">
         <div class="main-nav__container">
           <a class="main-nav__logo" href="index.html">
-            <img class="main-nav__logo--mobile" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Pink">
-            <img class="main-nav__logo--tablet" src="img/logo-pink-white-tablet.svg" width="147" height="40" alt="Логотип Pink">
-            <img class="main-nav__logo--desktop" src="img/logo-pink-white-desktop.svg" width="147" height="40" alt="Логотип Pink">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+              <img class="main-nav__logo" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Pink">
+            </picture>
           </a>
-          <button class="main-nav__toggle" type="button">Закрыть меню</button>
+          <button class="main-nav__toggle" type="button">Показать/скрыть меню</button>
         </div>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
@@ -36,14 +38,6 @@
       </nav>
 
       <div class="main-header__background main-header__background--short">
-        <div class="main-menu">
-          <a href="index.html">
-            <img class="main-menu__logo--mobile" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Pink">
-            <img class="main-menu__logo--tablet" src="img/logo-pink-white-tablet.svg" width="147" height="40" alt="Логотип Pink">
-          </a>
-          <button class="main-menu__toggle" type="button">Открыть меню</button>
-        </div>
-
         <h1 class="main__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
       </div>
     </header>
@@ -55,49 +49,66 @@
 
       <form class="competition-form" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="competition-form__fieldset competition-form__fieldset--name">
-          <label class="competition-form__label competition-form__label--pink" for="surname">фамилия:</label>
           <div class="competition-form__item">
-            <input class="competition-form__input" id="surname" name="surname" type="text" placeholder="Укажите фамилию *" required>
+            <label class="competition-form__label competition-form__label--pink competition-form__label--name" for="surname">Фамилия:</label>
+            <input class="competition-form__input competition-form__input--name" id="surname" name="surname" type="text" placeholder="Укажите фамилию *" required>
           </div>
-          <label class="competition-form__label competition-form__label--pink" for="name">имя:</label>
           <div class="competition-form__item">
-            <input class="competition-form__input" id="name" name="name" type="text" placeholder="Введите ваше имя *" required>
+            <label class="competition-form__label competition-form__label--pink competition-form__label--name" for="name">Имя:</label>
+            <input class="competition-form__input competition-form__input--name" id="name" name="name" type="text" placeholder="Введите ваше имя *" required>
           </div>
-          <label class="competition-form__label competition-form__label--pink" for="patronymic">отчество:</label>
           <div class="competition-form__item">
-            <input class="competition-form__input" id="patronymic" name="patronymic" type="text" placeholder="Ну и отчество тоже">
+            <label class="competition-form__label competition-form__label--pink competition-form__label--name" for="patronymic">Отчество:</label>
+            <input class="competition-form__input competition-form__input--name" id="patronymic" name="patronymic" type="text" placeholder="Ну и отчество тоже">
           </div>
         </fieldset>
 
-        <fieldset class="competition-form__fieldset competition-form__fieldset--grey">
-          <legend class="competition-form__fieldset-title competition-form__fieldset-title--achievement">ваши безбашенные достижения в путешествии</legend>
-          <input class="competition-form__input--checkbox" id="selfie" type="checkbox" name="achievements" value="selfie" checked>
-          <label class="competition-form__label competition-form__label--checkbox" for="selfie">Сделал селфи с акулой</label>
-          <input class="competition-form__input--checkbox" id="sunburn" type="checkbox" name="achievements" value="sunburn" checked>
-          <label class="competition-form__label competition-form__label--checkbox" for="sunburn">Обгорел на пляже</label>
-          <input class="competition-form__input--checkbox" id="norris" type="checkbox" name="achievements" value="norris">
-          <label class="competition-form__label competition-form__label--checkbox" for="norris">Видел Чака Норриса</label>
-          <input class="competition-form__input--checkbox" id="souvenirs" type="checkbox" name="achievements" value="souvenirs">
-          <label class="competition-form__label competition-form__label--checkbox" for="souvenirs">Накупил сувениров</label>
-          <input class="competition-form__input--checkbox" id="tower" type="checkbox" name="achievements" value="tower" checked>
-          <label class="competition-form__label competition-form__label--checkbox" for="tower">Удержал башню</label>
-          <input class="competition-form__input--checkbox" id="hotel" type="checkbox" name="achievements" value="hotel">
-          <label class="competition-form__label competition-form__label--checkbox" for="hotel">Разгромил отель</label>
+        <fieldset class="competition-form__fieldset competition-form__fieldset--grey competition-form__fieldset--checkbox">
+          <legend class="competition-form__fieldset-title competition-form__fieldset-title--achievement">Ваши безбашенные достижения в путешествии</legend>
+          <div class="competition-form__container--checkbox">
+            <div class="competition-form__item--checkbox">
+              <input class="competition-form__input--checkbox" id="selfie" type="checkbox" name="achievements" value="selfie" checked>
+              <label class="competition-form__label competition-form__label--checkbox" for="selfie">Сделал селфи с акулой</label>
+            </div>
+            <div class="competition-form__item--checkbox">
+              <input class="competition-form__input--checkbox" id="sunburn" type="checkbox" name="achievements" value="sunburn" checked>
+              <label class="competition-form__label competition-form__label--checkbox" for="sunburn">Обгорел на пляже</label>
+            </div>
+            <div class="competition-form__item--checkbox">
+              <input class="competition-form__input--checkbox" id="norris" type="checkbox" name="achievements" value="norris">
+              <label class="competition-form__label competition-form__label--checkbox" for="norris">Видел Чака Норриса</label>
+            </div>
+            <div class="competition-form__item--checkbox">
+              <input class="competition-form__input--checkbox" id="souvenirs" type="checkbox" name="achievements" value="souvenirs">
+              <label class="competition-form__label competition-form__label--checkbox" for="souvenirs">Накупил сувениров</label>
+            </div>
+            <div class="competition-form__item--checkbox">
+              <input class="competition-form__input--checkbox" id="tower" type="checkbox" name="achievements" value="tower" checked>
+              <label class="competition-form__label competition-form__label--checkbox" for="tower">Удержал башню</label>
+            </div>
+            <div class="competition-form__item--checkbox">
+              <input class="competition-form__input--checkbox" id="hotel" type="checkbox" name="achievements" value="hotel">
+              <label class="competition-form__label competition-form__label--checkbox" for="hotel">Разгромил отель</label>
+            </div>
+          </div>
         </fieldset>
 
         <fieldset class="competition-form__fieldset competition-form__fieldset--contacts">
-          <label class="competition-form__label competition-form__label--pink" for="phone">номер телефона</label>
-          <div class="competition-form__item">
-            <input class="competition-form__input" id="phone" name="phone" type="text" placeholder="Номер, пожалуйста">
-          </div>
-          <label class="competition-form__label competition-form__label--pink" for="email">адрес почты</label>
-          <div class="competition-form__item">
-            <input class="competition-form__input" id="email" name="email" type="email" placeholder="Введите почту *" required>
+          <legend class="competition-form__fieldset-title competition-form__fieldset-title--contacts">Контактная информация</legend>
+          <div class="competition-form__container--contacts">
+            <div class="competition-form__item competition-form__item--contacts">
+              <label class="competition-form__label competition-form__label--pink" for="phone">Номер телефона</label>
+              <input class="competition-form__input" id="phone" name="phone" type="tel" placeholder="Номер, пожалуйста">
+            </div>
+            <div class="competition-form__item competition-form__item--contacts">
+              <label class="competition-form__label competition-form__label--pink" for="email">Адрес почты</label>
+              <input class="competition-form__input" id="email" name="email" type="email" placeholder="Введите почту *" required>
+            </div>
           </div>
         </fieldset>
 
-        <fieldset class="competition-form__fieldset competition-form__fieldset--grey">
-          <legend class="competition-form__fieldset-title competition-form__fieldset-title--app">с каким приложением путешествовали?</legend>
+        <fieldset class="competition-form__fieldset competition-form__fieldset--grey competition-form__fieldset--radio">
+          <legend class="competition-form__fieldset-title competition-form__fieldset-title--app">С каким приложением путешествовали?</legend>
           <input class="competition-form__input--radio" id="ios" type="radio" name="app" value="ios" checked>
           <label class="competition-form__label competition-form__label--radio" for="ios">Pink для iOS</label>
           <input class="competition-form__input--radio" id="android" type="radio" name="app" value="android">
@@ -106,23 +117,23 @@
           <label class="competition-form__label competition-form__label--radio" for="windows">Windows Phone</label>
         </fieldset>
 
-        <fieldset class="competition-form__fieldset">
-          <label class="competition-form__label competition-form__label--pink competition-form__label--emotions" for="emotions">Опишите свои эмоции</label>
-          <div class="competition-form__item">
-            <textarea class="competition-form__input competition-form__textarea" id="emotions" name="emotions-description" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-          </div>
+        <fieldset class="competition-form__fieldset competition-form__fieldset--textarea">
+          <legend class="competition-form__fieldset-title competition-form__fieldset-title--emotions" for="emotions">Опишите свои эмоции</legend>
+          <textarea class="competition-form__input competition-form__textarea" id="emotions" name="emotions-description" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </fieldset>
 
-        <button class="competition-form__button" type="submit">отправить форму</button>
+        <button class="competition-form__button" type="submit">Отправить форму</button>
       </form>
 
-      <p class="competition-form__text"><span class="competition-form__text-inner">*</span> - обязательные поля</p>
+      <p class="competition-form__text"><span class="competition-form__text-inner">*</span> - обязательные <span class="competition-form__text--hidden">для заполнения</span> поля</p>
     </main>
   </body>
 
   <footer class="footer">
-    <img class="footer__logo--mobile" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип Pink">
-    <img class="footer__logo--desktop" src="img/logo-pink-blue-desktop.svg" width="147" height="40" alt="Логотип Pink">
+    <picture>
+      <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
+      <img class="footer__logo" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип Pink">
+    </picture>
     <ul class="footer__social-icons social-icons__list">
       <li class="social-icons__item">
         <a class="social-icons__link" href="#" title="Перейти на страницу Twitter">

@@ -11,11 +11,13 @@
       <nav class="main-nav">
         <div class="main-nav__container">
           <a class="main-nav__logo" href="index.html">
-            <img class="main-nav__logo--mobile" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Pink">
-            <img class="main-nav__logo--tablet" src="img/logo-pink-white-tablet.svg" width="147" height="40" alt="Логотип Pink">
-            <img class="main-nav__logo--desktop" src="img/logo-pink-white-desktop.svg" width="147" height="40" alt="Логотип Pink">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+              <img class="main-nav__logo" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Pink">
+            </picture>
           </a>
-          <button class="main-nav__toggle" type="button">Закрыть меню</button>
+          <button class="main-nav__toggle" type="button">Показать/скрыть меню</button>
         </div>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
@@ -36,14 +38,6 @@
       </nav>
 
       <div class="main-header__background main-header__background--short">
-        <div class="main-menu">
-          <a href="index.html">
-            <img class="main-menu__logo--mobile" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Pink">
-            <img class="main-menu__logo--tablet" src="img/logo-pink-white-tablet.svg" width="147" height="40" alt="Логотип Pink">
-          </a>
-          <button class="main-menu__toggle" type="button">Открыть меню</button>
-        </div>
-
         <h1 class="main__title main__title-photo">Фотографии пользователей</h1>
       </div>
     </header>
@@ -57,16 +51,18 @@
             <div class="photo__img-container">
               <p class="photo__img-text">панорама дня</p>
             </div>
-            <img class="photo__panorama--mobile" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Фото моста в горах">
-            <img class="photo__panorama--tablet" src="img/panorama-tablet@1x.jpg" width="660" height="510" alt="Фото моста в горах">
-            <img class="photo__panorama--desktop" src="img/panorama-desktop@1x.jpg" width="1200" height="505" alt="Фото моста в горах">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg">
+              <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg">
+              <img class="photo__panorama" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Фото моста в горах">
+            </picture>
           </div>
           <div class="photo__description photo__description--panorama">
             <div class="photo__person">
               <span class="photo__name">Анна</span>
               <span class="photo__timing">(5 минут назад)</span>
             </div>
-            <p class="photo__paragraph photo__paragraph--panorama">Прыгать или нет? Напишите в комментариях свой совет и смотрите прямую трансляцию в перископе, задавайте свои  вопросы!</p>
+            <p class="photo__paragraph photo__paragraph--panorama">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои  вопросы!</p>
             <div class="photo__like-container photo__like-container--panorama">
               <span class="photo__like photo__like--panorama">нравится: 215</span>
             </div>
@@ -74,7 +70,11 @@
         </li>
         <li class="photo__item">
           <div class="photo__img">
-            <img class="photo__picture" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фото машины">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg">
+              <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg">
+              <img class="photo__picture" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фото машины">
+            </picture>
           </div>
           <div class="photo__description">
             <div class="photo__description-container">
@@ -91,7 +91,11 @@
         </li>
         <li class="photo__item">
           <div class="photo__img">
-            <img class="photo__picture" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Фото музыкальных инструментов">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg">
+              <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg">
+              <img class="photo__picture" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Фото музыкальных инструментов">
+            </picture>
           </div>
           <div class="photo__description">
             <div class="photo__description-container">
@@ -108,7 +112,11 @@
         </li>
         <li class="photo__item">
           <div class="photo__img">
-            <img class="photo__picture" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Фото небоскребов через стеклянную крышу">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg">
+              <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg">
+              <img class="photo__picture" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Фото небоскребов через стеклянную крышу">
+            </picture>
           </div>
           <div class="photo__description">
             <div class="photo__description-container">
@@ -125,7 +133,11 @@
         </li>
         <li class="photo__item">
           <div class="photo__img">
-            <img class="photo__picture" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Фото ярмарки 'Кубанская бахча'">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg">
+              <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg">
+              <img class="photo__picture" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Фото ярмарки 'Кубанская бахча'">
+            </picture>
           </div>
           <div class="photo__description">
             <div class="photo__description-container">
@@ -142,7 +154,11 @@
         </li>
         <li class="photo__item">
           <div class="photo__img">
-            <img class="photo__picture" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фото мужских ног в горах">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg">
+              <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg">
+              <img class="photo__picture" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фото мужских ног в горах">
+            </picture>
           </div>
           <div class="photo__description">
             <div class="photo__description-container">
@@ -159,7 +175,11 @@
         </li>
         <li class="photo__item">
           <div class="photo__img">
-            <img class="photo__picture" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Фото крыла самолета">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg">
+              <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg">
+              <img class="photo__picture" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Фото крыла самолета">
+            </picture>
           </div>
           <div class="photo__description">
             <div class="photo__description-container">
@@ -182,7 +202,11 @@
       </div>
 
       <section class="photo__post">
-        <img class="photo__post-img" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Зимняя дорога">
+        <picture>
+          <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg">
+          <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg">
+          <img class="photo__post-img" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Зимняя дорога">
+        </picture>
         <ul class="photo__controls-list">
           <li class="photo__controls-item">
             <span class="visually-hidden">Обрезка</span>
@@ -222,8 +246,10 @@
   </body>
 
   <footer class="footer">
-    <img class="footer__logo--mobile" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип Pink">
-    <img class="footer__logo--desktop" src="img/logo-pink-blue-desktop.svg" width="147" height="40" alt="Логотип Pink">
+    <picture>
+      <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
+      <img class="footer__logo" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип Pink">
+    </picture>
     <ul class="footer__social-icons social-icons__list">
       <li class="social-icons__item">
         <a class="social-icons__link" href="#" title="Перейти на страницу Twitter">

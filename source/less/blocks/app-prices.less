@@ -1,17 +1,16 @@
 .app-prices {
   background-color: rgb(242, 242, 242);
-  min-height: 285px;
+  min-height: 382px;
   padding-top: 90px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-@media (max-width: 660px) {
+@media (max-width: 659px) {
   .app-prices__table {
     background-color: rgb(255, 255, 255);
     width: 320px;
-    height: 280px;
     border-collapse: collapse;
   }
 
@@ -28,6 +27,14 @@
   .app-prices__price--mobile-hidden,
   .app-prices__cell--mobile-hidden {
     display: none;
+  }
+
+  .app-prices__heading-row {
+    height: 100px;
+  }
+
+  .app-prices__row {
+    height: 60px;
   }
 
   .app-prices__cell--heading {
@@ -122,16 +129,25 @@
   }
 
   .app-prices__pins {
-    margin-top: 20px;
+    margin-top: 15px;
   }
 }
 
 @media (min-width: 660px) {
+  .app-prices {
+    min-height: 285px;
+    padding-top: 90px;
+  }
+
   .app-prices__table {
-    background-color: rgb(255, 255, 255);
+    background-color: transparent;
     width: 620px;
-    height: 220px;
     border-collapse: collapse;
+  }
+
+  .app-prices__row {
+    background-color: rgb(255, 255, 255);
+    height: 45px;
   }
 
   .app-prices__cell {
@@ -146,7 +162,11 @@
     padding: 0;
   }
 
-  .app-prices__heading-cell {
+  .app-prices__heading-row {
+    height: 80px;
+  }
+
+  .app-prices__cell--heading {
     background-color: rgb(40, 54, 69);
     width: 153px;
     min-height: 80px;
@@ -236,14 +256,17 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .app-prices__table {
     width: 940px;
-    height: 285px;
   }
 
-  .app-prices__heading-cell {
+  .app-prices__heading-row {
     height: 100px;
+  }
+
+  .app-prices__row {
+    height: 60px;
   }
 
   .app-prices__cell {
