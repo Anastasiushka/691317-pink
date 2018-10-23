@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
     <link href="css/style.css" rel="stylesheet">
   </head>
 
@@ -99,18 +101,21 @@
 
             <div class="app-description__pictures">
               <picture>
-                <source media="(min-width: 960px)" srcset="img/iphone-screen-3-desktop@1x.png 1x, img/ iphone-screen-3-desktop@2x.png 2x">
+                <source media="(min-width: 960px)" srcset="img/iphone-screen-3-desktop@1x.png 1x, img/iphone-screen-3-desktop@2x.png 2x">
                 <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x.png 2x">
                 <img class="app-description_image" src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" width="157" height=" 320" alt="Телефон с веселым смайлом на экране">
               </picture>
 
-              <img class="app-description_image--desktop-1" src="img/iphone-screen-1-desktop@1x.png" srcset="img/ iphone-screen-1-desktop@2x.png 2x">
-              <img class="app-description_image--desktop-2" src="img/iphone-screen-2-desktop@1x.png" srcset="img/ iphone-screen-2-desktop@2x.png 2x">
+              <img class="app-description_image--desktop-1" src="img/iphone-screen-1-desktop@1x.png" srcset="img/iphone-screen-1-desktop@2x.png 2x">
+              <img class="app-description_image--desktop-2" src="img/iphone-screen-2-desktop@1x.png" srcset="img/iphone-screen-2-desktop@2x.png 2x">
             </div>
           </div>
 
           <div class="app-description__effect">
-            <img class="app-description__effect-img" src="http://placehold.it/150x100" width="238" height="276" alt="Таймер">
+            <span class="app-description__effect-img-text">24</span>
+            <svg class="app-description__effect-img" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="298px" height="345.097px" viewBox="0 0 298 345.097" enable-background="new 0 0 298 345.097" xml:space="preserve" style="fill:#dedede">
+              <path d="M264.568,102.055l5.355-5.355c7.717-7.717,9.124-18.938,3.126-24.935c-5.997-5.997-17.217-4.59-24.934,3.127l-5.386,5.385 C221.768,63.292,196.11,51.875,168,48.297v-9.583h7.658c10.914,0,19.843-8.711,19.843-19.357S186.573,0,175.659,0h-53.317  c-10.913,0-19.842,8.711-19.842,19.357s8.929,19.357,19.842,19.357H130v9.583C56.681,57.629,0,120.244,0,196.097  c0,82.291,66.709,149,149,149c82.29,0,149-66.709,149-149C298,160.434,285.465,127.703,264.568,102.055z M149,306.264 c-60.844,0-110.167-49.323-110.167-110.167S88.156,85.93,149,85.93c60.843,0,110.167,49.323,110.167,110.167  S209.843,306.264,149,306.264z"/>
+            </svg>
             <div class="app-description__effect-text">
               <h2 class="app-description__effect-heading">Эффект  на 24 часа!</h2>
               <p class="app-description__effect-paragraph">Британские ученые провели исследования и доказали, что положительный эффект от   использования приложения длится целые сутки!</p>
@@ -255,6 +260,7 @@
         </div>
         <div class="contacts__map">
           <span class="visually-hidden">Мы находимся здесь"></span>
+          <span class="contacts__map-marker"></span>
         </div>
       </section>
     </main>
