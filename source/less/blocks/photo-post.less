@@ -32,8 +32,9 @@
 }
 
 .photo__controls-circle {
-  width: 10px;
-  height: 10px;
+  width: 14px;
+  height: 14px;
+  padding: 0;
   background-color: rgb(255, 255, 255);
   border-style: solid;
   border-width: 2px;
@@ -42,12 +43,19 @@
   position: absolute;
   top: 8px;
   left: 230px;
+  cursor: pointer;
 }
 
 .photo__controls-line {
   background-color: rgb(40, 54, 69);
   width: 240px;
   height: 2px;
+}
+
+.photo__controls-range--crop,
+.photo__controls-range--fill,
+.photo__controls-range--contrast {
+  display: none;
 }
 
 .photo__post-buttons {
@@ -67,11 +75,13 @@
   line-height: 18px;
   font-weight: 700;
   margin-bottom: 12px;
+  cursor: pointer;
 }
 
 .photo__post-button:disabled {
   border-color: rgb(221, 223, 224);
   color: rgb(221, 223, 224);
+  cursor: default;
 }
 
 @media (min-width: 660px) {
@@ -94,6 +104,31 @@
     display: none;
   }
 
+  .photo__controls-range--crop,
+  .photo__controls-range--fill,
+  .photo__controls-range--contrast {
+    display: block;
+    border: none;
+    margin-right: 20px;
+    padding-bottom: 15px;
+  }
+
+  .photo__controls-line {
+    width: 202px;
+  }
+
+  .photo__controls-circle--crop {
+    left: 145px;
+  }
+
+  .photo__controls-circle--fill {
+    left: 25px;
+  }
+
+  .photo__controls-circle--contrast {
+    left: 95px;
+  }
+
   .photo__controls-list {
     flex-direction: column;
     align-items: center;
@@ -111,6 +146,7 @@
     width: 275px;
     border-bottom: 1px solid rgb(221, 223, 224);
     display: flex;
+    justify-content: space-between;
     align-items: center;
   }
 
@@ -159,6 +195,28 @@
   .photo__controls-item {
     height: 72px;
     width: 410px;
+  }
+
+  .photo__controls-range--crop,
+  .photo__controls-range--fill,
+  .photo__controls-range--contrast {
+    margin-right: 30px;
+  }
+
+  .photo__controls-line {
+    width: 290px;
+  }
+
+  .photo__controls-circle--crop {
+    left: 72px;
+  }
+
+  .photo__controls-circle--fill {
+    left: 248px;
+  }
+
+  .photo__controls-circle--contrast {
+    left: 162px;
   }
 
   .photo__post-buttons {
