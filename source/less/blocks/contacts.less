@@ -53,13 +53,13 @@
   background-image: url("../img/bg-map-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: 0 -445px;
-  width: 320px;
+  background-size: cover;
   height: 200px;
 }
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .contacts__map {
-    background-image: url("../img/bg-map-mobile@2x.png");
+    background-image: url("../img/bg-map-mobile@2x.jpg");
   }
 }
 
@@ -117,9 +117,9 @@
 
   .contacts__map {
     background-image: url("../img/bg-map-tablet@1x.jpg");
-    background-position: -20px -345px;
+    background-position: 0px -310px;
     background-repeat: no-repeat;
-    width: 660px;
+    background-size: cover;
     height: 375px;
   }
 
@@ -187,10 +187,10 @@
 
   .contacts__map {
     background-image: url("../img/bg-map-desktop@1x.jpg");
-    background-position: 0 -280px;
+    background-position: center;
     background-repeat: no-repeat;
-    width: 960px;
     height: 500px;
+    background-size: cover;
   }
 
   @media (min-width: 960px) and (min-resolution: 144dpi),
@@ -201,7 +201,7 @@
   }
 
   .contacts__map-marker {
-    top: 260px;
-    left: 582px;
+    top: 290px;
+    left: 460px;
   }
 }
