@@ -1,6 +1,5 @@
 .main-header {
   position: relative;
-  width: 320px;
 }
 
 .main-header__background {
@@ -22,6 +21,9 @@
 
 .main-header__background--short {
   min-height: 237px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .main-header__img {
@@ -31,7 +33,8 @@
 
 .main-nav {
   background-color: rgb(40, 54, 69);
-  width: 320px;
+  width: 100vw;
+  min-width: 320px;
   position: absolute;
   z-index: 10;
   top: -265px;
@@ -40,6 +43,7 @@
 .main-nav__container {
   padding-left: 20px;
   padding-right: 20px;
+  width: calc(100vw - 40px);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -122,16 +126,11 @@
   font-weight: 300;
   width: 240px;
   text-align: center;
-  margin-left: 40px;
   margin-top: 0;
   padding-top: 95px;
 }
 
 @media (min-width: 660px) {
-  .main-header {
-    width: 660px;
-  }
-
   .main-header__background {
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat;
@@ -147,10 +146,6 @@
     }
   }
 
-  .main-nav {
-    width: 660px;
-  }
-
   .main-header__img {
     width: 660px;
     height: 540px;
@@ -164,7 +159,7 @@
 
   .main-nav__container {
     min-height: 110px;
-    width: 620px;
+    width: calc(100vw - 40px);
   }
 
   .main-nav__logo {
@@ -178,16 +173,12 @@
     font-size: 50px;
     line-height: 60px;
     width: 500px;
-    margin-left: 77px;
     padding-top: 180px;
+    margin: 0;
   }
 }
 
 @media (min-width: 960px) {
-  .main-header {
-    width: 960px;
-  }
-
   .main-header__img {
     width: 880px;
     height: 650px;
@@ -220,13 +211,14 @@
     align-items: center;
     background-color: rgba(0, 0, 0, 0.3);
     min-height: 110px;
-    width: 940px;
+    width: calc(100vw - 20px);
     padding-right: 10px;
     padding-left: 10px;
     top: 0;
   }
 
   .main-nav__container {
+    width: 288px;
     background-color: transparent;
     border: none;
     padding: 0;
@@ -266,13 +258,11 @@
 
   .main__title {
     width: 770px;
-    margin-left: 90px;
     padding-top: 175px;
   }
 
   .main__title-photo {
     width: 420px;
-    margin-left: 267px;
   }
 
   .main-nav__container--closed {
