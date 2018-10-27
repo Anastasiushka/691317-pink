@@ -10,7 +10,7 @@
   background-size: cover;
   background-position: center;
   min-height: 462px;
-  margin-top: 265px;
+  margin-top: 260px;
 }
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -28,7 +28,7 @@
 
 .main-header__img {
   position: absolute;
-  top: 172px;
+  top: 168px;
 }
 
 .main-nav {
@@ -37,7 +37,20 @@
   min-width: 320px;
   position: absolute;
   z-index: 10;
-  top: -265px;
+  top: -260px;
+}
+
+.main-nav__logo--tablet,
+.main-nav__logo--desktop {
+  display: none;
+}
+
+.main-nav__logo--mobile:hover path {
+  fill: rgb(210, 40, 86);
+}
+
+.main-nav__logo--mobile:focus path {
+  fill: rgba(255, 255, 255, 0.3);
 }
 
 .main-nav__container {
@@ -101,7 +114,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 63px;
+  min-height: 62px;
   border-style: solid;
   border-right: none;
   border-left: none;
@@ -117,6 +130,19 @@
   line-height: 32px;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.site-list__link:hover {
+  color: rgb(210, 40, 86);
+}
+
+.site-list__link:focus {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.site-list__link:active {
+  color: rgb(255, 255, 255);
+  border-bottom: 2px solid rgb(255, 255, 255);
 }
 
 .main__title {
@@ -137,6 +163,7 @@
     min-height: 728px;
     background-size: cover;
     background-position: center;
+    margin-top: 260px;
   }
 
   @media (min-width: 660px) and (min-resolution: 144dpi),
@@ -144,6 +171,14 @@
     .main-header__background {
       background-image: url("../img/bg-back-tablet@2x.jpg");
     }
+  }
+
+  .main-nav {
+    top: -260px;
+  }
+
+  .site-list__item--short {
+    min-height: 61px;
   }
 
   .main-header__img {
@@ -154,7 +189,7 @@
   }
 
   .main-header__background--short {
-    min-height: 440px;
+    min-height: 435px;
   }
 
   .main-nav__container {
@@ -162,7 +197,12 @@
     width: calc(100vw - 40px);
   }
 
-  .main-nav__logo {
+  .main-nav__logo--mobile {
+    display: none;
+  }
+
+  .main-nav__logo--tablet {
+    display: inline;
     position: relative;
     width: 147px;
     height: 40px;
@@ -173,7 +213,7 @@
     font-size: 50px;
     line-height: 60px;
     width: 500px;
-    padding-top: 180px;
+    padding-top: 175px;
     margin: 0;
   }
 }
@@ -249,11 +289,16 @@
     text-transform: capitalize;
   }
 
-  .main-nav__logo {
+  .main-nav__logo--tablet {
+    display: none;
+  }
+
+  .main-nav__logo--desktop {
+    display: inline;
     position: relative;
     width: 147px;
     height: 40px;
-    top: -5px;
+    top: -7px;
   }
 
   .main__title {
