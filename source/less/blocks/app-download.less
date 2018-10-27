@@ -10,7 +10,12 @@
   padding-bottom: 15px;
 }
 
-.app-download__link-container {
+.app-download__link {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,29 +26,18 @@
   border-width: 3px;
   border-color: rgb(255, 255, 255);
   border-radius: 35px;
-  cursor: pointer;
-}
-
-.app-download__link {
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-  font-size: 18px;
-  line-height: 18px;
-  font-weight: 700;
 }
 
 .app-download__link:hover {
+  background-color: rgb(255, 255, 255);
   color: rgb(210, 40, 86);
 }
 
 .app-download__link:focus {
+  background-color: rgb(255, 255, 255);
   color: rgba(210, 40, 86, 0.3);
 }
 
-.app-download__link-container:hover,
-.app-download__link-container:focus {
-  background-color: rgb(255, 255, 255);
-}
 
 .app-download__images {
   list-style: none;

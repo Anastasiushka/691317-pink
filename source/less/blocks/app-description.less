@@ -414,8 +414,10 @@
     height: 41px;
     top: 20px;
     left: -120px;
+    opacity: 0.7;
     background-image: url("../img/icon-review-arrow-left.svg");
     background-repeat: no-repeat;
+    cursor: pointer;
   }
 
   .app-description__review-text::after {
@@ -425,11 +427,23 @@
     height: 41px;
     top: 20px;
     left: 800px;
+    opacity: 0.7;
     background-image: url("../img/icon-review-arrow-right.svg");
     background-repeat: no-repeat;
+    cursor: pointer;
   }
 
   .app-description__pins {
     display: none;
+  }
+
+  .app-description__review-text::before:hover,
+  .app-description__review-text::after:hover {
+    opacity: 1;
+  }
+
+  .app-description__review-text::before:focus,
+  .app-description__review-text::after:focus {
+    opacity: 0.3;
   }
 }

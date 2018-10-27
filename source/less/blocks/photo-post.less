@@ -16,6 +16,32 @@
   margin-right: 20px;
 }
 
+.photo__crop,
+.photo__fill,
+.photo__contrast {
+  cursor: pointer;
+}
+
+.photo__crop:hover {
+  fill: rgb(141, 148, 155);
+}
+.photo__fill:hover {
+  fill: rgb(141, 148, 155);
+}
+.photo__contrast:hover {
+  fill: rgb(141, 148, 155);
+}
+
+.photo__crop:active {
+  fill: rgb(210, 40, 86);
+}
+.photo__fill:active {
+  fill: rgb(210, 40, 86);
+}
+.photo__contrast:active {
+  fill: rgb(210, 40, 86);
+}
+
 .photo__controls-list {
   list-style: none;
   padding: 0;
@@ -53,6 +79,11 @@
   cursor: pointer;
 }
 
+.photo__controls-circle:active {
+  background-color: rgb(210, 40, 86);
+  outline: none;
+}
+
 .photo__controls-line {
   background-color: rgb(40, 54, 69);
   width: 240px;
@@ -85,10 +116,32 @@
   cursor: pointer;
 }
 
-.photo__post-button:disabled {
+.photo__post-button--post:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(210, 40, 86);
+}
+
+.photo__post-button--post:focus {
+  color: rgb(224, 105, 137);
+  background-color: rgb(210, 40, 86);
+  outline: none;
+}
+
+.photo__post-button--canceled {
   border-color: rgb(221, 223, 224);
   color: rgb(221, 223, 224);
-  cursor: default;
+}
+
+.photo__post-button--canceled:hover {
+  color: rgb(181, 185, 190);
+  border-color: rgb(181, 185, 190);
+}
+
+.photo__post-button--canceled:focus {
+  color: rgb(203, 206, 210);
+  background-color: rgb(181, 185, 190);
+  border-color: rgb(181, 185, 190);
+  outline: none;
 }
 
 @media (min-width: 660px) {

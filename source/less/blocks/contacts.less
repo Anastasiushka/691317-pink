@@ -66,6 +66,12 @@
   height: 200px;
 }
 
+.contacts__map-iframe {
+  height: 200px;
+  min-width: 320px;
+  width: 100vw;
+}
+
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .contacts__map {
     background-image: url("../img/bg-map-mobile@2x.jpg");
@@ -118,6 +124,11 @@
     background-size: cover;
     height: 375px;
     margin-top: 0;
+  }
+
+  .contacts__map-iframe {
+    min-width: 660px;
+    height: 375px;
   }
 
   @media (min-width: 660px) and (min-resolution: 144dpi),
@@ -189,5 +200,10 @@
     .contacts__map {
       background-image: url("../img/bg-map-desktop@2x.jpg");
     }
+  }
+
+  .contacts__map-iframe {
+    min-width: 960px;
+    height: 500px;
   }
 }

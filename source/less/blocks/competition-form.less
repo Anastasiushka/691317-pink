@@ -38,6 +38,15 @@
   margin-top: 5px;
 }
 
+.competition-form__input:hover {
+  border-color: rgb(40, 54, 69);
+}
+
+.competition-form__input:focus {
+  outline: none;
+  border-color: rgb(210, 40, 86);
+}
+
 .competition-form__fieldset-title,
 .competition-form__label--pink {
   color: rgb(210, 40, 86);
@@ -109,8 +118,18 @@
   background: rgb(255, 255, 255);
   top: -8px;
   left: -65px;
+  cursor: pointer;
+}
+/*
+.competition-form__label--checkbox::before:hover {
+  border-color: rgb(40, 54, 69);
 }
 
+.competition-form__label--checkbox::before:focus {
+  outline: none;
+  border-color: rgb(210, 40, 86);
+}
+*/
 .competition-form__input--checkbox:checked + .competition-form__label--checkbox::after {
   content: "";
   position: absolute;
@@ -123,6 +142,7 @@
   transform: rotate(-45deg);
   top: 5px;
   left: -55px;
+  cursor: pointer;
 }
 
 .competition-form__fieldset--contacts {
@@ -171,8 +191,18 @@
   background: rgb(255, 255, 255);
   top: -6px;
   left: -70px;
+  cursor: pointer;
+}
+/*
+.competition-form__label--radio::before:hover {
+  border-color: rgb(40, 54, 69);
 }
 
+.competition-form__label--radio::before:focus {
+  outline: none;
+  border-color: rgb(210, 40, 86);
+}
+*/
 .competition-form__input--radio:checked + .competition-form__label--radio::after {
   content: "";
   position: absolute;
@@ -182,6 +212,7 @@
   background: rgb(210, 40, 86);
   top: 5px;
   left: -57.5px;
+  cursor: pointer;
 }
 
 .competition-form__label--emotions {
@@ -218,6 +249,21 @@
   font-weight: 700;
   margin-left: 20px;
   text-transform: uppercase;
+  cursor: pointer;
+}
+
+.competition-form__button:hover {
+  background-color: rgb(28, 155, 94);
+}
+
+.competition-form__button:focus {
+  background-color: rgb(28, 155, 94);
+  color: rgb(97, 185, 143);
+}
+
+.competition-form__button:disabled {
+  background-color: rgb(229, 229, 229);
+  color: rgb(255, 255, 255);
 }
 
 @media (min-width: 660px) {
