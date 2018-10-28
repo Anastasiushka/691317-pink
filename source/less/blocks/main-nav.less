@@ -1,10 +1,14 @@
 .main-nav {
   background-color: rgb(40, 54, 69);
-  width: 100vw;
+  width: 100%;
   min-width: 320px;
   position: absolute;
   z-index: 10;
   top: -260px;
+}
+
+.main-nav--closed {
+  top: 0;
 }
 
 .main-nav__logo-tablet,
@@ -12,24 +16,22 @@
   display: none;
 }
 
-.main-nav__logo:hover .main-nav__logo-mobile path,
-.main-nav__logo:hover .main-nav__logo-tablet path,
-.main-nav__logo:hover .main-nav__logo-desktop path,
-.main-nav__logo:hover .main-nav__logo-desktop g {
+
+.main-nav__logo:hover path,
+.main-nav__logo:hover g {
   fill: rgb(210, 40, 86);
 }
 
-.main-nav__logo:focus .main-nav__logo-mobile path,
-.main-nav__logo:focus .main-nav__logo-tablet path,
-.main-nav__logo:focus .main-nav__logo-desktop path,
-.main-nav__logo:focus .main-nav__logo-desktop g {
+.main-nav__logo:focus path,
+.main-nav__logo:focus g {
   fill: rgba(255, 255, 255, 0.3);
 }
 
 .main-nav__container {
+  box-sizing: border-box;
   padding-left: 20px;
   padding-right: 20px;
-  width: calc(100vw - 40px);
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -49,28 +51,36 @@
   border: none;
   position: absolute;
   z-index: 1;
-  width: 280px;
-  top: 0;
+}
+
+.main-nav__wrapper--closed {
+  display: none;
 }
 
 .main-nav__toggle {
+  display: none;
   position: relative;
   top: 0;
   left: 0;
-  width: 50px;
-  height: 24px;
-  font-size: 0;
-  background-color: transparent;
-  background-image: url("../img/icon-menu-burger.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
   border: 0;
   cursor: pointer;
 }
 
 .main-nav__toggle--closed {
+  display: inline;
+  width: 50px;
+  height: 24px;
+  background-color: transparent;
+  background-image: url("../img/icon-menu-burger.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.main-nav__toggle--opened {
+  display: inline;
   width: 24px;
   height: 23px;
+  background-color: transparent;
   background-image: url("../img/icon-menu-cross.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -82,7 +92,7 @@
   margin: 0;
 }
 
-.site-list__item {
+.main-nav__item {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -95,11 +105,11 @@
   border-bottom-color: rgb(0, 0, 0);
 }
 
-.site-list__item--active {
+.main-nav__item--active {
   cursor: default;
 }
 
-.site-list__link {
+.main-nav__link {
   text-decoration: none;
   color: rgb(255, 255, 255);
   font-size: 18px;
@@ -108,32 +118,29 @@
   text-transform: uppercase;
 }
 
-.site-list__link:hover {
+.main-nav__link:hover {
   color: rgb(210, 40, 86);
 }
 
-.site-list__link:focus {
+.main-nav__link:focus {
   color: rgba(210, 40, 86, 0.3);
 }
 
-.site-list__link--active:hover,
-.site-list__link--active:focus {
+.main-nav__link--active:hover,
+.main-nav__link--active:focus {
   cursor: default;
   color: rgb(255, 255, 255);
 }
 
 @media (min-width: 660px) {
-  .main-nav {
-    top: -260px;
-  }
-
-  .site-list__item--short {
+  .main-nav__item--short {
     min-height: 61px;
   }
 
   .main-nav__container {
     min-height: 110px;
-    width: calc(100vw - 40px);
+    box-sizing: border-box;
+    width: 100%;
   }
 
   .main-nav__logo-mobile {
@@ -156,7 +163,8 @@
     justify-content: space-around;
     background-color: rgba(0, 0, 0, 0.3);
     min-height: 110px;
-    width: calc(100vw - 20px);
+    box-sizing: border-box;
+    width: 100%;
     padding-right: 10px;
     padding-left: 10px;
     top: 0;
@@ -173,6 +181,10 @@
     margin-left: 30px;
   }
 
+  .main-nav__wrapper--closed {
+    display: flex;
+  }
+
   .main-nav__list {
     width: 622px;
     display: flex;
@@ -180,29 +192,29 @@
     align-items: center;
   }
 
-  .site-list__item {
+  .main-nav__item {
     border: none;
   }
 
-  .site-list__link:hover {
+  .main-nav__link:hover {
     color: rgb(210, 40, 86);
   }
 
-  .site-list__link:focus {
+  .main-nav__link:focus {
     color: rgba(255, 255, 255, 0.3);
   }
 
-  .site-list__link--active {
+  .main-nav__link--active {
     color: rgb(255, 255, 255);
     border-bottom: 2px solid rgb(255, 255, 255);
     cursor: default;
   }
 
-  .site-list__link--active:hover {
+  .main-nav__link--active:hover {
     color: rgb(255, 255, 255);
   }
 
-  .site-list__link--active:focus {
+  .main-nav__link--active:focus {
     color: rgb(255, 255, 255);
   }
 
@@ -210,7 +222,7 @@
     display: none;
   }
 
-  .site-list__link {
+  .main-nav__link {
     line-height: 18px;
     font-weight: 400;
     text-transform: capitalize;

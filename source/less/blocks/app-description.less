@@ -20,17 +20,18 @@
   position: relative;
 }
 
-.app-description__background {
+.app-description__wrapper::before {
+  content: "";
   position: absolute;
   right: 0;
   top: 0;
   background-image: url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: 100% 100%;
   min-width: 320px;
-  width: 100vw;
-  height: 50px;
+  width: 100%;
+  height: 30px;
 }
 
 .app-description__list-container {
@@ -156,10 +157,9 @@
     width: 400px;
   }
 
-  .app-description__background {
+  .app-description__wrapper::before {
     z-index: 1;
-    top: -23px;
-    height: 94px;
+    height: 45px;
   }
 
   .app-description__list-container {
@@ -295,7 +295,7 @@
 @media (min-width: 960px) {
   .app-description__main-headers {
     margin-top: 50px;
-    margin-bottom: 68px;
+    margin-bottom: 80px;
   }
 
   .app-description__header-main {
@@ -307,8 +307,8 @@
     background-color: rgb(242, 242, 242);
   }
 
-  .app-description__background {
-    top: 0;
+  .app-description__wrapper::before {
+    height: 70px;
   }
 
   .app-description__header-main--short {
@@ -316,7 +316,7 @@
   }
 
   .app-description__list-container {
-    padding-top: 360px;
+    padding-top: 348px;
   }
 
   .app-description__list {
