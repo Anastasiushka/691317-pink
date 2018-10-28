@@ -1,4 +1,4 @@
-.pins__list {
+.pins {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -27,18 +27,11 @@
 }
 
 .pins__button:focus {
+  outline: none;
   background-color: rgb(233, 235, 236);
 }
 
-.pins__button:active {
-  padding: 0;
-  width: 12px;
-  height: 12px;
-  border-style: solid;
-  border-width: 3px;
-  border-color: rgb(40, 54, 69);
-  border-radius: 50%;
+.pins__button--checked {
+  box-shadow: 0 0 0 3px rgb(40, 54, 69);
   background-color: rgb(255, 255, 255);
-  position: relative;
-  top: 1px;
 }

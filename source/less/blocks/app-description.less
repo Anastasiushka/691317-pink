@@ -16,6 +16,23 @@
   text-align: center;
 }
 
+.app-description__wrapper {
+  position: relative;
+}
+
+.app-description__background {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-width: 320px;
+  width: 100vw;
+  height: 50px;
+}
+
 .app-description__list-container {
   background-color: rgb(242, 242, 242);
   padding-top: 80px;
@@ -58,8 +75,13 @@
   margin-bottom: 27px;
 }
 
+.app-description__pictures {
+  overflow: hidden;
+}
+
 .app-description_image {
   margin-top: 10px;
+  margin-bottom: -45px;
 }
 
 .app-description_image--desktop-1,
@@ -134,18 +156,30 @@
     width: 400px;
   }
 
+  .app-description__background {
+    z-index: 1;
+    top: -23px;
+    height: 94px;
+  }
+
   .app-description__list-container {
     position: relative;
     padding-top: 67px;
     padding-bottom: 15px;
   }
 
+  .app-description__pictures {
+    overflow: visible;
+  }
+
   .app-description_image {
     position: absolute;
+    z-index: 2;
     width: 267px;
     height: 483px;
     top: -10px;
     left: 20px;
+    margin-bottom: 0;
   }
 
   .app-description__list {
@@ -165,6 +199,11 @@
     text-align: left;
     font-size: 14px;
     margin-bottom: 30px;
+  }
+
+  .app-description__effect-wrapper {
+    width: 660px;
+    margin: 0 auto;
   }
 
   .app-description__effect {
@@ -256,7 +295,7 @@
 @media (min-width: 960px) {
   .app-description__main-headers {
     margin-top: 50px;
-    margin-bottom: 70px;
+    margin-bottom: 68px;
   }
 
   .app-description__header-main {
@@ -266,6 +305,10 @@
 
   .app-description__wrapper {
     background-color: rgb(242, 242, 242);
+  }
+
+  .app-description__background {
+    top: 0;
   }
 
   .app-description__header-main--short {
@@ -303,10 +346,14 @@
     line-height: 30px;
   }
 
+  .app-description__pictures {
+    position: relative;
+  }
+
   .app-description_image {
     position: absolute;
-    top: 0;
-    left: 655px;
+    top: -595px;
+    left: 175px;
     width: 296px;
     height: 305px;
     margin: 0;
@@ -315,8 +362,9 @@
   .app-description_image--desktop-1 {
     display: inline;
     position: absolute;
-    top: 0;
-    left: 15px;
+    z-index: 2;
+    top: -595px;
+    left: -465px;
     width: 296px;
     height: 305px;
   }
@@ -324,15 +372,20 @@
   .app-description_image--desktop-2 {
     display: inline;
     position: absolute;
-    top: 0;
-    left: 335px;
+    z-index: 2;
+    top: -595px;
+    left: -145px;
     width: 296px;
     height: 305px;
   }
 
+  .app-description__effect-wrapper {
+    width: 960px;
+  }
+
   .app-description__effect {
     margin-bottom: 220px;
-    margin-left: 380px;
+    margin-left: 375px;
     margin-top: 110px;
     padding-bottom: 115px;
   }
@@ -376,13 +429,18 @@
 
   .app-description__review-item {
     margin-bottom: 5px;
+    position: relative;
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .app-description__review-name {
     font-size: 24px;
     line-height: 30px;
-    margin-bottom: 0;
+    margin-bottom: 3px;
     margin-top: 90px;
+    position: relative;
   }
 
   .app-description__review-desc {
@@ -401,32 +459,42 @@
     position: absolute;
     width: 79px;
     height: 63px;
-    top: -155px;
-    left: 442px;
+    top: -240px;
+    left: 70px;
     background-image: url("../img/icon-quotes.svg");
     background-repeat: no-repeat;
   }
 
-  .app-description__review-text::before {
-    content: "";
+  .app-description__review-arrow--left {
     position: absolute;
     width: 22px;
     height: 41px;
-    top: 20px;
-    left: -120px;
+    top: -7px;
+    left: 9px;
+    opacity: 0.7;
     background-image: url("../img/icon-review-arrow-left.svg");
     background-repeat: no-repeat;
+    cursor: pointer;
   }
 
-  .app-description__review-text::after {
-    content: "";
+  .app-description__review-arrow--right {
     position: absolute;
     width: 22px;
     height: 41px;
-    top: 20px;
-    left: 800px;
+    top: -7px;
+    left: 927px;
+    opacity: 0.6;
     background-image: url("../img/icon-review-arrow-right.svg");
     background-repeat: no-repeat;
+    cursor: pointer;
+  }
+
+  .app-description__review-arrow:hover {
+    opacity: 1;
+  }
+
+  .app-description__review-arrow:focus {
+    opacity: 0.2;
   }
 
   .app-description__pins {
