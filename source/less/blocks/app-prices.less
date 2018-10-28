@@ -8,17 +8,18 @@
   position: relative;
 }
 
-.app-prices__background {
+.app-prices::before {
+  content: "";
   position: absolute;
   left: 0;
-  top: -35px;
+  top: 0;
   background-image: url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: 100% 100%;
   min-width: 320px;
-  width: 100vw;
-  height: 94px;
+  width: 100%;
+  height: 30px;
 }
 
 @media (max-width: 659px) {
@@ -158,8 +159,8 @@
     padding-top: 80px;
   }
 
-  .app-prices__background {
-    top: -23px;
+  .app-prices::before {
+    height: 45px;
   }
 
   .app-prices__table {
@@ -183,6 +184,7 @@
   .app-prices__heading-empty {
     background-color: rgb(242, 242, 242);
     padding: 0;
+    width: 160px;
   }
 
   .app-prices__heading-row {
@@ -257,7 +259,7 @@
     width: 31px;
     height: 21px;
     top: 13px;
-    left: 67px;
+    left: 65px;
     background-image: url("../img/icon-yes.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -281,8 +283,8 @@
 }
 
 @media (min-width: 960px) {
-  .app-prices__background {
-    top: -10px;
+  .app-prices::before {
+    height: 70px;
   }
 
   .app-prices__table {
